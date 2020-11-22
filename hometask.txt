@@ -1,0 +1,776 @@
+oleg@oleg-VirtualBox:~$ oleg@oleg-VirtualBox:~$ id
+uid=1000(oleg) gid=1000(oleg) группы=1000(oleg),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+oleg@oleg-VirtualBox:~$ sudo id
+uid=0(root) gid=0(root) группы=0(root)
+oleg@oleg-VirtualBox:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:115::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:109:116:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:110:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:111:117:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+cups-pk-helper:x:113:120:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:114:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+avahi:x:115:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+kernoops:x:116:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:117:123::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:118:124:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:119:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:120:125::/nonexistent:/bin/false
+colord:x:121:126:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:122:127::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:123:128:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:124:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:125:130:Gnome Display Manager:/var/lib/gdm3:/bin/false
+oleg:x:1000:1000:oleg,,,:/home/oleg:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+vboxadd:x:998:1::/var/run/vboxadd:/bin/false
+sshd:x:126:65534::/run/sshd:/usr/sbin/nologin
+oleg@oleg-VirtualBox:~$ cat /etc/shadow
+cat: /etc/shadow: Отказано в доступе
+oleg@oleg-VirtualBox:~$ sudo cat/etc/shadow
+sudo: cat/etc/shadow: команда не найдена
+oleg@oleg-VirtualBox:~$ sudo cat /etc/shadow
+root:!:18581:0:99999:7:::
+daemon:*:18474:0:99999:7:::
+bin:*:18474:0:99999:7:::
+sys:*:18474:0:99999:7:::
+sync:*:18474:0:99999:7:::
+games:*:18474:0:99999:7:::
+man:*:18474:0:99999:7:::
+lp:*:18474:0:99999:7:::
+mail:*:18474:0:99999:7:::
+news:*:18474:0:99999:7:::
+uucp:*:18474:0:99999:7:::
+proxy:*:18474:0:99999:7:::
+www-data:*:18474:0:99999:7:::
+backup:*:18474:0:99999:7:::
+list:*:18474:0:99999:7:::
+irc:*:18474:0:99999:7:::
+gnats:*:18474:0:99999:7:::
+nobody:*:18474:0:99999:7:::
+systemd-network:*:18474:0:99999:7:::
+systemd-resolve:*:18474:0:99999:7:::
+systemd-timesync:*:18474:0:99999:7:::
+messagebus:*:18474:0:99999:7:::
+syslog:*:18474:0:99999:7:::
+_apt:*:18474:0:99999:7:::
+tss:*:18474:0:99999:7:::
+uuidd:*:18474:0:99999:7:::
+tcpdump:*:18474:0:99999:7:::
+avahi-autoipd:*:18474:0:99999:7:::
+usbmux:*:18474:0:99999:7:::
+rtkit:*:18474:0:99999:7:::
+dnsmasq:*:18474:0:99999:7:::
+cups-pk-helper:*:18474:0:99999:7:::
+speech-dispatcher:!:18474:0:99999:7:::
+avahi:*:18474:0:99999:7:::
+kernoops:*:18474:0:99999:7:::
+saned:*:18474:0:99999:7:::
+nm-openvpn:*:18474:0:99999:7:::
+hplip:*:18474:0:99999:7:::
+whoopsie:*:18474:0:99999:7:::
+colord:*:18474:0:99999:7:::
+geoclue:*:18474:0:99999:7:::
+pulse:*:18474:0:99999:7:::
+gnome-initial-setup:*:18474:0:99999:7:::
+gdm:*:18474:0:99999:7:::
+oleg:$6$AoPQbAgTY1B.fzBd$rutQ8m8L2PFZekY5/zZtEEPbRnWeGcmsA6Ly/LGO3FhwrdM8VjG/FSj8vTBUnaZ/Px5nWy5TK5G09BxjBSKL5/:18581:0:99999:7:::
+systemd-coredump:!!:18581::::::
+vboxadd:!:18581::::::
+sshd:*:18581:0:99999:7:::
+oleg@oleg-VirtualBox:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,oleg
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:oleg
+floppy:x:25:
+tape:x:26:
+sudo:x:27:oleg
+audio:x:29:pulse
+dip:x:30:oleg
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:oleg
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+bluetooth:x:112:
+ssl-cert:x:113:
+uuidd:x:114:
+tcpdump:x:115:
+avahi-autoipd:x:116:
+rtkit:x:117:
+ssh:x:118:
+netdev:x:119:
+lpadmin:x:120:oleg
+avahi:x:121:
+scanner:x:122:saned
+saned:x:123:
+nm-openvpn:x:124:
+whoopsie:x:125:
+colord:x:126:
+geoclue:x:127:
+pulse:x:128:
+pulse-access:x:129:
+gdm:x:130:
+lxd:x:131:oleg
+oleg:x:1000:
+sambashare:x:132:oleg
+systemd-coredump:x:999:
+vboxsf:x:998:
+oleg@oleg-VirtualBox:~$ sudo useradd -s /bin/bash -d /home/user1 -m user1
+oleg@oleg-VirtualBox:~$ sudo adduser user2
+Добавляется пользователь «user2» ...
+Добавляется новая группа «user2» (1002) ...
+Добавляется новый пользователь «user2» (1002) в группу «user2» ...
+Создаётся домашний каталог «/home/user2» ...
+Копирование файлов из «/etc/skel» ...
+Новый пароль :
+Повторите ввод нового пароля :
+passwd: пароль успешно обновлён
+Изменение информации о пользователе user2
+Введите новое значение или нажмите ENTER для выбора значения по умолчанию
+        Полное имя []:
+        Номер комнаты []:
+        Рабочий телефон []:
+        Домашний телефон []:
+        Другое []:
+Данная информация корректна? [Y/n] y
+oleg@oleg-VirtualBox:~$ sudo useradd -s /bin/bash -d /home/user3 -m user3
+oleg@oleg-VirtualBox:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:115::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:109:116:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:110:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:111:117:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+cups-pk-helper:x:113:120:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:114:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+avahi:x:115:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+kernoops:x:116:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:117:123::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:118:124:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:119:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:120:125::/nonexistent:/bin/false
+colord:x:121:126:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:122:127::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:123:128:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:124:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:125:130:Gnome Display Manager:/var/lib/gdm3:/bin/false
+oleg:x:1000:1000:oleg,,,:/home/oleg:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+vboxadd:x:998:1::/var/run/vboxadd:/bin/false
+sshd:x:126:65534::/run/sshd:/usr/sbin/nologin
+user1:x:1001:1001::/home/user1:/bin/bash
+user2:x:1002:1002:,,,:/home/user2:/bin/bash
+user3:x:1003:1003::/home/user3:/bin/bash
+oleg@oleg-VirtualBox:~$ man useradd
+oleg@oleg-VirtualBox:~$ oleg@oleg-VirtualBox:~$ sudo groupadd team1
+oleg@oleg-VirtualBox:~$ sudo addgroup team2
+Добавляется группа «team2» (GID 1005) ...
+Готово.
+oleg@oleg-VirtualBox:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,oleg
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:oleg
+floppy:x:25:
+tape:x:26:
+sudo:x:27:oleg
+audio:x:29:pulse
+dip:x:30:oleg
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:oleg
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+bluetooth:x:112:
+ssl-cert:x:113:
+uuidd:x:114:
+tcpdump:x:115:
+avahi-autoipd:x:116:
+rtkit:x:117:
+ssh:x:118:
+netdev:x:119:
+lpadmin:x:120:oleg
+avahi:x:121:
+scanner:x:122:saned
+saned:x:123:
+nm-openvpn:x:124:
+whoopsie:x:125:
+colord:x:126:
+geoclue:x:127:
+pulse:x:128:
+pulse-access:x:129:
+gdm:x:130:
+lxd:x:131:oleg
+oleg:x:1000:
+sambashare:x:132:oleg
+systemd-coredump:x:999:
+vboxsf:x:998:
+user1:x:1001:
+user2:x:1002:
+user3:x:1003:
+team1:x:1004:
+team2:x:1005:
+oleg@oleg-VirtualBox:~$ sudousermod -aG team2 user2
+sudousermod: команда не найдена
+oleg@oleg-VirtualBox:~$ sudo usermod -aG team2 user2
+oleg@oleg-VirtualBox:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,oleg
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:oleg
+floppy:x:25:
+tape:x:26:
+sudo:x:27:oleg
+audio:x:29:pulse
+dip:x:30:oleg
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:oleg
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+bluetooth:x:112:
+ssl-cert:x:113:
+uuidd:x:114:
+tcpdump:x:115:
+avahi-autoipd:x:116:
+rtkit:x:117:
+ssh:x:118:
+netdev:x:119:
+lpadmin:x:120:oleg
+avahi:x:121:
+scanner:x:122:saned
+saned:x:123:
+nm-openvpn:x:124:
+whoopsie:x:125:
+colord:x:126:
+geoclue:x:127:
+pulse:x:128:
+pulse-access:x:129:
+gdm:x:130:
+lxd:x:131:oleg
+oleg:x:1000:
+sambashare:x:132:oleg
+systemd-coredump:x:999:
+vboxsf:x:998:
+user1:x:1001:
+user2:x:1002:
+user3:x:1003:
+team1:x:1004:
+team2:x:1005:user2
+oleg@oleg-VirtualBox:~$ sudo usermod -aG team2 user1
+oleg@oleg-VirtualBox:~$ sudo usermod team1 user1
+Использование: usermod [параметры] ПОЛЬЗОВАТЕЛЬ
+
+Параметры:
+  -b, --badnames                allow bad names
+  -c, --comment КОММЕНТАРИЙ     новое значение поля GECOS
+  -d, --home ДОМ_КАТ            новый домашний каталог учётной записи
+  -e, --expiredate ДАТА_УСТ     установить дату окончания действия
+                                учётной записи в ДАТА_УСТ
+  -f, --inactive НЕАКТИВНОСТЬ   установить период неактивности пароля после
+                                устаревания учётной записи равным НЕАКТИВНОСТЬ
+  -g, --gid ГРУППА              принудительно назначить первичную ГРУППУ
+  -G, --groups ГРУППЫ           список дополнительных ГРУПП
+  -a, --append                  добавить пользователя в дополнительные
+                                ГРУППЫ, указанные в параметре -G не удаляя
+                                пользователя из других групп
+  -h, --help                    показать данное сообщение и закончить работу
+  -l, --login НОВОЕ_ИМЯ         новое значение имени учётной записи
+  -L, --lock                    заблокировать учётную запись
+  -m, --move-home               переместить содержимое домашнего каталога в
+                                новое место (использовать только вместе с -d)
+  -o, --non-unique              разрешить создание учётной записи с уже
+                                имеющимся (не уникальным) UID
+  -p, --password ПАРОЛЬ         задать новый шифрованный пароль для
+                                учётной записи
+  -R, --root КАТ_CHROOT         каталог, в который выполняется chroot
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -s, --shell ОБОЛОЧКА          новая регистрационная оболочка для учётной
+                                записи
+  -u, --uid UID                 новый UID для учётной записи
+  -U, --unlock                  разблокировать учётную запись
+  -v, --add-subuids ПЕРВ-ПОСЛ   добавить диапазон подчинённых uid
+  -V, --del-subuids ПЕРВ-ПОСЛ   удалить диапазон подчинённых uid
+  -w, --add-subgids ПЕРВ-ПОСЛ   добавить диапазон подчинённых gid
+  -W, --del-subgids ПЕРВ-ПОСЛ   удалить диапазон подчинённых gid
+  -Z, --selinux-user SEUSER     новое пользовательское сопоставление
+                                SELinux для учётной записи
+
+oleg@oleg-VirtualBox:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,oleg
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:oleg
+floppy:x:25:
+tape:x:26:
+sudo:x:27:oleg
+audio:x:29:pulse
+dip:x:30:oleg
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:oleg
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+bluetooth:x:112:
+ssl-cert:x:113:
+uuidd:x:114:
+tcpdump:x:115:
+avahi-autoipd:x:116:
+rtkit:x:117:
+ssh:x:118:
+netdev:x:119:
+lpadmin:x:120:oleg
+avahi:x:121:
+scanner:x:122:saned
+saned:x:123:
+nm-openvpn:x:124:
+whoopsie:x:125:
+colord:x:126:
+geoclue:x:127:
+pulse:x:128:
+pulse-access:x:129:
+gdm:x:130:
+lxd:x:131:oleg
+oleg:x:1000:
+sambashare:x:132:oleg
+systemd-coredump:x:999:
+vboxsf:x:998:
+user1:x:1001:
+user2:x:1002:
+user3:x:1003:
+team1:x:1004:
+team2:x:1005:user2,user1
+oleg@oleg-VirtualBox:~$ sudo usermod -g team1 user1
+oleg@oleg-VirtualBox:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,oleg
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:oleg
+floppy:x:25:
+tape:x:26:
+sudo:x:27:oleg
+audio:x:29:pulse
+dip:x:30:oleg
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:oleg
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+bluetooth:x:112:
+ssl-cert:x:113:
+uuidd:x:114:
+tcpdump:x:115:
+avahi-autoipd:x:116:
+rtkit:x:117:
+ssh:x:118:
+netdev:x:119:
+lpadmin:x:120:oleg
+avahi:x:121:
+scanner:x:122:saned
+saned:x:123:
+nm-openvpn:x:124:
+whoopsie:x:125:
+colord:x:126:
+geoclue:x:127:
+pulse:x:128:
+pulse-access:x:129:
+gdm:x:130:
+lxd:x:131:oleg
+oleg:x:1000:
+sambashare:x:132:oleg
+systemd-coredump:x:999:
+vboxsf:x:998:
+user1:x:1001:
+user2:x:1002:
+user3:x:1003:
+team1:x:1004:
+team2:x:1005:user2,user1
+oleg@oleg-VirtualBox:~$ man deluser
+oleg@oleg-VirtualBox:~$ oleg@oleg-VirtualBox:~$ deluser user2 team2
+/usr/sbin/deluser: Только суперпользователь может удалить пользователя или группу из системы.
+oleg@oleg-VirtualBox:~$ sudo deluser user2 team2
+Удаляется пользователь «user2» из группы «team2» ...
+Готово.
+oleg@oleg-VirtualBox:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,oleg
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:oleg
+floppy:x:25:
+tape:x:26:
+sudo:x:27:oleg
+audio:x:29:pulse
+dip:x:30:oleg
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:oleg
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+bluetooth:x:112:
+ssl-cert:x:113:
+uuidd:x:114:
+tcpdump:x:115:
+avahi-autoipd:x:116:
+rtkit:x:117:
+ssh:x:118:
+netdev:x:119:
+lpadmin:x:120:oleg
+avahi:x:121:
+scanner:x:122:saned
+saned:x:123:
+nm-openvpn:x:124:
+whoopsie:x:125:
+colord:x:126:
+geoclue:x:127:
+pulse:x:128:
+pulse-access:x:129:
+gdm:x:130:
+lxd:x:131:oleg
+oleg:x:1000:
+sambashare:x:132:oleg
+systemd-coredump:x:999:
+vboxsf:x:998:
+user1:x:1001:
+user2:x:1002:
+user3:x:1003:
+team1:x:1004:
+team2:x:1005:user1
+oleg@oleg-VirtualBox:~$ sudo usermod -aG sudo user3
+oleg@oleg-VirtualBox:~$ sudo sudoedit
+sudo: sudoedit doesn't need to be run via sudo
+sudo: ошибка модуля: отсутствует список файлов для sudoedit
+oleg@oleg-VirtualBox:~$ sudo sudoedit /etc/sudoers
+sudo: sudoedit doesn't need to be run via sudo
+oleg@oleg-VirtualBox:~$ sudoedit /etc/sudoers
+sudoeditsudoedit: /etc/sudoers не изменено
+oleg@oleg-VirtualBox:~$ man deluser
+oleg@oleg-VirtualBox:~$ oleg@oleg-VirtualBox:~$ deluser --remove-home user1
+/usr/sbin/deluser: Только суперпользователь может удалить пользователя или группу из системы.
+oleg@oleg-VirtualBox:~$ sudo deluser --remove-home user1
+Идёт поиск файлов для сохранения/удаления ...
+Удаляются файлы ...
+Удаляется пользователь «user1» ...
+Предупреждение: в группе `team1' больше никого нет.
+userdel: группа user1 не удалена, так как это не первичная группа пользователя user1.
+Готово.
+oleg@oleg-VirtualBox:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:115::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:109:116:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:110:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:111:117:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+cups-pk-helper:x:113:120:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:114:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+avahi:x:115:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+kernoops:x:116:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:117:123::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:118:124:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:119:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:120:125::/nonexistent:/bin/false
+colord:x:121:126:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:122:127::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:123:128:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:124:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:125:130:Gnome Display Manager:/var/lib/gdm3:/bin/false
+oleg:x:1000:1000:oleg,,,:/home/oleg:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+vboxadd:x:998:1::/var/run/vboxadd:/bin/false
+sshd:x:126:65534::/run/sshd:/usr/sbin/nologin
+user2:x:1002:1002:,,,:/home/user2:/bin/bash
+user3:x:1003:1003::/home/user3:/bin/bash
+oleg@oleg-VirtualBox:~$
