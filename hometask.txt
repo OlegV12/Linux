@@ -1,548 +1,315 @@
-oleg@oleg-VirtualBox:~$ echo 'test' > test.txt
-oleg@oleg-VirtualBox:~$ echo 'test2' >> test.txt
-oleg@oleg-VirtualBox:~$ cat /etc/* >> test.txt 2> errors.txt
-oleg@oleg-VirtualBox:~$ cat errors.txt
-cat: /etc/acpi: Это каталог
-cat: /etc/alsa: Это каталог
-cat: /etc/alternatives: Это каталог
-cat: /etc/apm: Это каталог
-cat: /etc/apparmor: Это каталог
-cat: /etc/apparmor.d: Это каталог
-cat: /etc/apport: Это каталог
-cat: /etc/apt: Это каталог
-cat: /etc/avahi: Это каталог
-cat: /etc/bash_completion.d: Это каталог
-cat: /etc/binfmt.d: Это каталог
-cat: /etc/bluetooth: Это каталог
-cat: /etc/brlapi.key: Отказано в доступе
-cat: /etc/brltty: Это каталог
-cat: /etc/ca-certificates: Это каталог
-cat: /etc/calendar: Это каталог
-cat: /etc/chatscripts: Это каталог
-cat: /etc/console-setup: Это каталог
-cat: /etc/cracklib: Это каталог
-cat: /etc/cron.d: Это каталог
-cat: /etc/cron.daily: Это каталог
-cat: /etc/cron.hourly: Это каталог
-cat: /etc/cron.monthly: Это каталог
-cat: /etc/cron.weekly: Это каталог
-cat: /etc/cups: Это каталог
-cat: /etc/cupshelpers: Это каталог
-cat: /etc/dbus-1: Это каталог
-cat: /etc/dconf: Это каталог
-cat: /etc/default: Это каталог
-cat: /etc/depmod.d: Это каталог
-cat: /etc/dhcp: Это каталог
-cat: /etc/dictionaries-common: Это каталог
-cat: /etc/dpkg: Это каталог
-cat: /etc/emacs: Это каталог
-cat: /etc/environment.d: Это каталог
-cat: /etc/firefox: Это каталог
-cat: /etc/fonts: Это каталог
-cat: /etc/fwupd: Это каталог
-cat: /etc/gdb: Это каталог
-cat: /etc/gdm3: Это каталог
-cat: /etc/geoclue: Это каталог
-cat: /etc/ghostscript: Это каталог
-cat: /etc/glvnd: Это каталог
-cat: /etc/gnome: Это каталог
-cat: /etc/groff: Это каталог
-cat: /etc/grub.d: Это каталог
-cat: /etc/gshadow: Отказано в доступе
-cat: /etc/gshadow-: Отказано в доступе
-cat: /etc/gss: Это каталог
-cat: /etc/gtk-2.0: Это каталог
-cat: /etc/gtk-3.0: Это каталог
-cat: /etc/hp: Это каталог
-cat: /etc/ifplugd: Это каталог
-cat: /etc/init: Это каталог
-cat: /etc/init.d: Это каталог
-cat: /etc/initramfs-tools: Это каталог
-cat: /etc/insserv.conf.d: Это каталог
-cat: /etc/iproute2: Это каталог
-cat: /etc/kernel: Это каталог
-cat: /etc/ldap: Это каталог
-cat: /etc/ld.so.conf.d: Это каталог
-cat: /etc/libblockdev: Это каталог
-cat: /etc/libnl-3: Это каталог
-cat: /etc/libpaper.d: Это каталог
-cat: /etc/libreoffice: Это каталог
-cat: /etc/logcheck: Это каталог
-cat: /etc/logrotate.d: Это каталог
-cat: /etc/mc: Это каталог
-cat: /etc/modprobe.d: Это каталог
-cat: /etc/modules-load.d: Это каталог
-cat: /etc/mysql: Это каталог
-cat: /etc/netplan: Это каталог
-cat: /etc/network: Это каталог
-cat: /etc/networkd-dispatcher: Это каталог
-cat: /etc/NetworkManager: Это каталог
-cat: /etc/newt: Это каталог
-cat: /etc/openvpn: Это каталог
-cat: /etc/opt: Это каталог
-cat: /etc/PackageKit: Это каталог
-cat: /etc/pam.d: Это каталог
-cat: /etc/pcmcia: Это каталог
-cat: /etc/perl: Это каталог
-cat: /etc/pki: Это каталог
-cat: /etc/pm: Это каталог
-cat: /etc/polkit-1: Это каталог
-cat: /etc/ppp: Это каталог
-cat: /etc/profile.d: Это каталог
-cat: /etc/pulse: Это каталог
-cat: /etc/python3: Это каталог
-cat: /etc/python3.8: Это каталог
-cat: /etc/rc0.d: Это каталог
-cat: /etc/rc1.d: Это каталог
-cat: /etc/rc2.d: Это каталог
-cat: /etc/rc3.d: Это каталог
-cat: /etc/rc4.d: Это каталог
-cat: /etc/rc5.d: Это каталог
-cat: /etc/rc6.d: Это каталог
-cat: /etc/rcS.d: Это каталог
-cat: /etc/rsyslog.d: Это каталог
-cat: /etc/sane.d: Это каталог
-cat: /etc/security: Это каталог
-cat: /etc/selinux: Это каталог
-cat: /etc/sensors.d: Это каталог
-cat: /etc/sgml: Это каталог
-cat: /etc/shadow: Отказано в доступе
-cat: /etc/shadow-: Отказано в доступе
-cat: /etc/skel: Это каталог
-cat: /etc/snmp: Это каталог
-cat: /etc/speech-dispatcher: Это каталог
-cat: /etc/ssh: Это каталог
-cat: /etc/ssl: Это каталог
-cat: /etc/sudoers: Отказано в доступе
-cat: /etc/sudoers.d: Это каталог
-cat: /etc/sysctl.d: Это каталог
-cat: /etc/systemd: Это каталог
-cat: /etc/terminfo: Это каталог
-cat: /etc/thermald: Это каталог
-cat: /etc/thunderbird: Это каталог
-cat: /etc/tmpfiles.d: Это каталог
-cat: /etc/ubuntu-advantage: Это каталог
-cat: /etc/udev: Это каталог
-cat: /etc/udisks2: Это каталог
-cat: /etc/ufw: Это каталог
-cat: /etc/update-manager: Это каталог
-cat: /etc/update-motd.d: Это каталог
-cat: /etc/update-notifier: Это каталог
-cat: /etc/UPower: Это каталог
-cat: /etc/usb_modeswitch.d: Это каталог
-cat: /etc/vim: Это каталог
-cat: /etc/vulkan: Это каталог
-cat: /etc/wpa_supplicant: Это каталог
-cat: /etc/X11: Это каталог
-cat: /etc/xdg: Это каталог
-cat: /etc/xml: Это каталог
-oleg@oleg-VirtualBox:~$ ls -l | cut -d ' ' -f 1 | sort | uniq
-drwxrwxr-x
-drwxr-xr-x
--rw-rw-r--
-итого
-oleg@oleg-VirtualBox:~$ nano /etc/ssh/sshd_config
-oleg@oleg-VirtualBox:~$ sudo nano /etc/ssh/sshd_config
-oleg@oleg-VirtualBox:~$ sudo systemctl restart sshd
-oleg@oleg-VirtualBox:~$ sudo systemctl status sshd
-● ssh.service - OpenBSD Secure Shell server
-     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
-     Active: active (running) since Fri 2020-11-27 14:42:25 EET; 12s ago
-       Docs: man:sshd(8)
-             man:sshd_config(5)
-    Process: 2549 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
-   Main PID: 2566 (sshd)
-      Tasks: 1 (limit: 2318)
-     Memory: 1.4M
-     CGroup: /system.slice/ssh.service
-             └─2566 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+Microsoft Windows [Version 10.0.19041.630]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2020. Все права защищены.
 
-ноя 27 14:42:25 oleg-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
-ноя 27 14:42:25 oleg-VirtualBox sshd[2566]: Server listening on 0.0.0.0 port 22.
-ноя 27 14:42:25 oleg-VirtualBox sshd[2566]: Server listening on :: port 22.
-ноя 27 14:42:25 oleg-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
-oleg@oleg-VirtualBox:~$ sudo nano /etc/ssh/sshd_config
-oleg@oleg-VirtualBox:~$ sudo systemctl reload sshd
-oleg@oleg-VirtualBox:~$ sudo systemctl status sshd
-● ssh.service - OpenBSD Secure Shell server
-     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
-     Active: active (running) since Fri 2020-11-27 14:42:25 EET; 1min 24s ago
-       Docs: man:sshd(8)
-             man:sshd_config(5)
-    Process: 2549 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
-    Process: 2575 ExecReload=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
-    Process: 2576 ExecReload=/bin/kill -HUP $MAINPID (code=exited, status=0/SUCCESS)
-   Main PID: 2566 (sshd)
-      Tasks: 1 (limit: 2318)
-     Memory: 1.7M
-     CGroup: /system.slice/ssh.service
-             └─2566 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+C:\Users\olegv>ssh oleg@172.25.80.42
+The authenticity of host '172.25.80.42 (172.25.80.42)' can't be established.
+ECDSA key fingerprint is SHA256:7vukyp0L1pg5LzEaVofRTkfckIY6N9gZVF+c5Fe8LaI.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added '172.25.80.42' (ECDSA) to the list of known hosts.
+oleg@172.25.80.42's password:
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-53-generic x86_64)
 
-ноя 27 14:42:25 oleg-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
-ноя 27 14:42:25 oleg-VirtualBox sshd[2566]: Server listening on 0.0.0.0 port 22.
-ноя 27 14:42:25 oleg-VirtualBox sshd[2566]: Server listening on :: port 22.
-ноя 27 14:42:25 oleg-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
-ноя 27 14:43:44 oleg-VirtualBox systemd[1]: Reloading OpenBSD Secure Shell server.
-ноя 27 14:43:44 oleg-VirtualBox sshd[2566]: Received SIGHUP; restarting.
-ноя 27 14:43:44 oleg-VirtualBox systemd[1]: Reloaded OpenBSD Secure Shell server.
-ноя 27 14:43:44 oleg-VirtualBox sshd[2566]: Server listening on 0.0.0.0 port 22.
-ноя 27 14:43:44 oleg-VirtualBox sshd[2566]: Server listening on :: port 22.
-oleg@oleg-VirtualBox:~$ cat > test_file.txt
-restart - 'hard' restart of service, reload - 'soft' restrat reading updatd config etc.                         
-oleg@oleg-VirtualBox:~$ mc
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
 
-oleg@oleg-VirtualBox:~$ ps
-    PID TTY          TIME CMD
-   2870 pts/1    00:00:00 bash
-   2877 pts/1    00:00:00 ps
-oleg@oleg-VirtualBox:~$ ps -ef
-UID          PID    PPID  C STIME TTY          TIME CMD
-root           1       0  0 14:17 ?        00:00:01 /sbin/init splash
-root           2       0  0 14:17 ?        00:00:00 [kthreadd]
-root           3       2  0 14:17 ?        00:00:00 [rcu_gp]
-root           4       2  0 14:17 ?        00:00:00 [rcu_par_gp]
-root           6       2  0 14:17 ?        00:00:00 [kworker/0:0H-kblockd]
-root           8       2  0 14:17 ?        00:00:00 [kworker/u2:0-events_unbound]
-root           9       2  0 14:17 ?        00:00:00 [mm_percpu_wq]
-root          10       2  0 14:17 ?        00:00:00 [ksoftirqd/0]
-root          11       2  0 14:17 ?        00:00:00 [rcu_sched]
-root          12       2  0 14:17 ?        00:00:00 [migration/0]
-root          13       2  0 14:17 ?        00:00:00 [idle_inject/0]
-root          14       2  0 14:17 ?        00:00:00 [cpuhp/0]
-root          15       2  0 14:17 ?        00:00:00 [kdevtmpfs]
-root          16       2  0 14:17 ?        00:00:00 [netns]
-root          17       2  0 14:17 ?        00:00:00 [rcu_tasks_kthre]
-root          18       2  0 14:17 ?        00:00:00 [kauditd]
-root          19       2  0 14:17 ?        00:00:00 [khungtaskd]
-root          20       2  0 14:17 ?        00:00:00 [oom_reaper]
-root          21       2  0 14:17 ?        00:00:00 [writeback]
-root          22       2  0 14:17 ?        00:00:00 [kcompactd0]
-root          23       2  0 14:17 ?        00:00:00 [ksmd]
-root          24       2  0 14:17 ?        00:00:00 [khugepaged]
-root          70       2  0 14:17 ?        00:00:00 [kintegrityd]
-root          71       2  0 14:17 ?        00:00:00 [kblockd]
-root          72       2  0 14:17 ?        00:00:00 [blkcg_punt_bio]
-root          73       2  0 14:17 ?        00:00:00 [tpm_dev_wq]
-root          74       2  0 14:17 ?        00:00:00 [ata_sff]
-root          75       2  0 14:17 ?        00:00:00 [md]
-root          76       2  0 14:17 ?        00:00:00 [edac-poller]
-root          77       2  0 14:17 ?        00:00:00 [devfreq_wq]
-root          78       2  0 14:17 ?        00:00:00 [watchdogd]
-root          81       2  0 14:17 ?        00:00:00 [kswapd0]
-root          82       2  0 14:17 ?        00:00:00 [ecryptfs-kthrea]
-root          84       2  0 14:17 ?        00:00:00 [kthrotld]
-root          85       2  0 14:17 ?        00:00:00 [acpi_thermal_pm]
-root          86       2  0 14:17 ?        00:00:00 [scsi_eh_0]
-root          87       2  0 14:17 ?        00:00:00 [scsi_tmf_0]
-root          88       2  0 14:17 ?        00:00:00 [scsi_eh_1]
-root          89       2  0 14:17 ?        00:00:00 [scsi_tmf_1]
-root          91       2  0 14:17 ?        00:00:00 [vfio-irqfd-clea]
-root          93       2  0 14:17 ?        00:00:00 [ipv6_addrconf]
-root         102       2  0 14:17 ?        00:00:00 [kstrp]
-root         105       2  0 14:17 ?        00:00:00 [kworker/u3:0]
-root         118       2  0 14:17 ?        00:00:00 [charger_manager]
-root         158       2  0 14:17 ?        00:00:00 [scsi_eh_2]
-root         161       2  0 14:17 ?        00:00:00 [scsi_tmf_2]
-root         163       2  0 14:17 ?        00:00:00 [kworker/0:1H-kblockd]
-root         191       2  0 14:17 ?        00:00:00 [jbd2/sda1-8]
-root         192       2  0 14:17 ?        00:00:00 [ext4-rsv-conver]
-root         231       1  0 14:17 ?        00:00:00 /lib/systemd/systemd-journald
-root         265       1  0 14:17 ?        00:00:00 /lib/systemd/systemd-udevd
-root         266       2  0 14:17 ?        00:00:00 [loop0]
-root         267       2  0 14:17 ?        00:00:00 [loop1]
-root         268       2  0 14:17 ?        00:00:00 [loop2]
-root         269       2  0 14:17 ?        00:00:00 [loop3]
-root         270       2  0 14:17 ?        00:00:00 [loop4]
-systemd+     283       1  0 14:17 ?        00:00:00 /lib/systemd/systemd-resolved
-root         332       2  0 14:17 ?        00:00:00 [iprt-VBoxWQueue]
-root         351       2  0 14:17 ?        00:00:00 [cryptd]
-root         357       2  0 14:17 ?        00:00:00 [irq/18-vmwgfx]
-root         360       2  0 14:17 ?        00:00:00 [ttm_swap]
-root         442       1  0 14:17 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
-root         443       1  0 14:17 ?        00:00:00 /usr/sbin/acpid
-avahi        448       1  0 14:17 ?        00:00:00 avahi-daemon: running [oleg-VirtualBox.local]
-root         451       1  0 14:17 ?        00:00:00 /usr/sbin/cron -f
-root         452       1  0 14:17 ?        00:00:00 /usr/sbin/cupsd -l
-message+     453       1  0 14:17 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         454       1  0 14:17 ?        00:00:03 /usr/sbin/NetworkManager --no-daemon
-root         477       1  0 14:17 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         478       1  0 14:17 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
-syslog       486       1  0 14:17 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
-root         489       1  0 14:17 ?        00:00:00 /usr/libexec/switcheroo-control
-root         490       1  0 14:17 ?        00:00:00 /lib/systemd/systemd-logind
-root         492       1  0 14:17 ?        00:00:00 /usr/lib/udisks2/udisksd
-root         497       1  0 14:17 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
-avahi        507     448  0 14:17 ?        00:00:00 avahi-daemon: chroot helper
-colord       526       1  0 14:17 ?        00:00:00 /usr/libexec/colord
-root         527       1  0 14:17 ?        00:00:00 /usr/sbin/cups-browsed
-root         536       1  0 14:17 ?        00:00:00 /usr/sbin/ModemManager --filter-policy=strict
-root         551       1  0 14:17 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie     626       1  0 14:17 ?        00:00:00 /usr/bin/whoopsie -f
-kernoops     627       1  0 14:17 ?        00:00:00 /usr/sbin/kerneloops --test
-kernoops     629       1  0 14:17 ?        00:00:00 /usr/sbin/kerneloops
-root         761       1  0 14:17 ?        00:00:00 /usr/sbin/gdm3
-root         771       1  0 14:17 ?        00:00:00 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
-root         780     761  0 14:17 ?        00:00:00 gdm-session-worker [pam/gdm-autologin]
-oleg         785       1  0 14:17 ?        00:00:00 /lib/systemd/systemd --user
-oleg         786     785  0 14:17 ?        00:00:00 (sd-pam)
-oleg         791     785  0 14:17 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-oleg         794     785  0 14:17 ?        00:00:00 /usr/libexec/tracker-miner-fs
-oleg         796       1  0 14:17 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-rtkit        800       1  0 14:17 ?        00:00:00 /usr/libexec/rtkit-daemon
-oleg         801     780  0 14:17 tty2     00:00:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-oleg         806     785  0 14:17 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-oleg         808     801  0 14:17 tty2     00:00:09 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
-oleg         811     785  0 14:17 ?        00:00:00 /usr/libexec/gvfsd
-oleg         816     785  0 14:17 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
-oleg         823     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
-oleg         842     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
-oleg         846     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
-oleg         850     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
-oleg         854     785  0 14:17 ?        00:00:00 /usr/libexec/goa-daemon
-oleg         867     785  0 14:17 ?        00:00:00 /usr/libexec/goa-identity-service
-oleg         869     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
-root         877       1  0 14:17 ?        00:00:00 /usr/lib/upower/upowerd
-oleg         887     801  0 14:17 tty2     00:00:00 /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu
-oleg         970       1  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --clipboard
-oleg         971     970  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --clipboard
-oleg         981       1  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --seamless
-oleg         982     981  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --seamless
-oleg         988       1  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --draganddrop
-oleg         989     988  0 14:17 ?        00:00:08 /usr/bin/VBoxClient --draganddrop
-oleg         996       1  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
-oleg         997     996  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
-oleg        1001     887  0 14:17 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-oleg        1020     785  0 14:17 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
-oleg        1026    1020  0 14:17 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-oleg        1031     785  0 14:17 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
-oleg        1037     785  0 14:17 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
-oleg        1052     785  0 14:17 ?        00:00:24 /usr/bin/gnome-shell
-oleg        1071    1052  0 14:17 ?        00:00:00 ibus-daemon --panel disable --xim
-oleg        1075    1071  0 14:17 ?        00:00:00 /usr/libexec/ibus-memconf
-oleg        1076    1071  0 14:17 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
-oleg        1080     785  0 14:17 ?        00:00:00 /usr/libexec/ibus-x11 --kill-daemon
-oleg        1083     785  0 14:17 ?        00:00:00 /usr/libexec/ibus-portal
-oleg        1093     785  0 14:17 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
-oleg        1097     785  0 14:17 ?        00:00:00 /usr/libexec/xdg-permission-store
-oleg        1102     785  0 14:17 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
-oleg        1108     785  0 14:17 ?        00:00:00 /usr/libexec/evolution-source-registry
-oleg        1116     785  0 14:17 ?        00:00:00 /usr/libexec/evolution-calendar-factory
-oleg        1126     785  0 14:17 ?        00:00:00 /usr/libexec/dconf-service
-oleg        1133     785  0 14:17 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
-oleg        1157     785  0 14:17 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-oleg        1163     811  0 14:17 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.4 /org/gtk/gvfs/exec_spaw/0
-oleg        1170     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-a11y-settings
-oleg        1175     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-color
-oleg        1178     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-datetime
-oleg        1179     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-housekeeping
-oleg        1182     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-keyboard
-oleg        1184     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-media-keys
-oleg        1185     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-power
-oleg        1188     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-print-notifications
-oleg        1189     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-rfkill
-oleg        1192     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
-oleg        1193     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-sharing
-oleg        1194     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-smartcard
-oleg        1206     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-sound
-oleg        1210     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-usb-protection
-oleg        1211     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-wacom
-oleg        1215     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-wwan
-oleg        1218     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-xsettings
-oleg        1231    1037  0 14:17 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
-oleg        1243    1037  0 14:17 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
-oleg        1271    1071  0 14:17 ?        00:00:00 /usr/libexec/ibus-engine-simple
-oleg        1273     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-printer
-root        1475       2  0 14:17 ?        00:00:00 [loop5]
-root        1546       2  0 14:18 ?        00:00:00 [loop6]
-root        1585       1  0 14:18 ?        00:00:22 /usr/lib/snapd/snapd
-oleg        1630     785  0 14:18 ?        00:00:00 /usr/libexec/gvfsd-metadata
-oleg        1633    1037  0 14:18 ?        00:00:00 update-notifier
-root        1776       2  0 14:19 ?        00:00:00 [loop7]
-root        1836       2  0 14:19 ?        00:00:00 [loop8]
-root        1989       2  0 14:20 ?        00:00:00 [loop9]
-oleg        2400     785  0 14:33 ?        00:00:04 /usr/libexec/gnome-terminal-server
-oleg        2408    2400  0 14:33 pts/0    00:00:00 bash
-root        2565       2  0 14:42 ?        00:00:00 [kworker/0:2-events]
-root        2566       1  0 14:42 ?        00:00:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
-root        2704       2  0 15:09 ?        00:00:00 [kworker/u2:2-events_power_efficient]
-root        2740       2  0 15:12 ?        00:00:00 [kworker/0:1-events]
-root        2795       2  0 15:18 ?        00:00:00 [kworker/u2:1-events_unbound]
-root        2798       2  0 15:18 ?        00:00:00 [kworker/0:0-events]
-root        2799       2  0 15:18 ?        00:00:00 [kworker/0:3-events]
-oleg        2868    2408  0 15:18 pts/0    00:00:00 mc
-oleg        2870    2868  0 15:18 pts/1    00:00:00 bash -rcfile .bashrc
-oleg        2896    2870  0 15:19 pts/1    00:00:00 ps -ef
-oleg@oleg-VirtualBox:~$ kill -9 2868Убито
-oleg@oleg-VirtualBox:~$ ps -ef
-UID          PID    PPID  C STIME TTY          TIME CMD
-root           1       0  0 14:17 ?        00:00:01 /sbin/init splash
-root           2       0  0 14:17 ?        00:00:00 [kthreadd]
-root           3       2  0 14:17 ?        00:00:00 [rcu_gp]
-root           4       2  0 14:17 ?        00:00:00 [rcu_par_gp]
-root           6       2  0 14:17 ?        00:00:00 [kworker/0:0H-kblockd]
-root           8       2  0 14:17 ?        00:00:00 [kworker/u2:0-events_unbound]
-root           9       2  0 14:17 ?        00:00:00 [mm_percpu_wq]
-root          10       2  0 14:17 ?        00:00:00 [ksoftirqd/0]
-root          11       2  0 14:17 ?        00:00:00 [rcu_sched]
-root          12       2  0 14:17 ?        00:00:00 [migration/0]
-root          13       2  0 14:17 ?        00:00:00 [idle_inject/0]
-root          14       2  0 14:17 ?        00:00:00 [cpuhp/0]
-root          15       2  0 14:17 ?        00:00:00 [kdevtmpfs]
-root          16       2  0 14:17 ?        00:00:00 [netns]
-root          17       2  0 14:17 ?        00:00:00 [rcu_tasks_kthre]
-root          18       2  0 14:17 ?        00:00:00 [kauditd]
-root          19       2  0 14:17 ?        00:00:00 [khungtaskd]
-root          20       2  0 14:17 ?        00:00:00 [oom_reaper]
-root          21       2  0 14:17 ?        00:00:00 [writeback]
-root          22       2  0 14:17 ?        00:00:00 [kcompactd0]
-root          23       2  0 14:17 ?        00:00:00 [ksmd]
-root          24       2  0 14:17 ?        00:00:00 [khugepaged]
-root          70       2  0 14:17 ?        00:00:00 [kintegrityd]
-root          71       2  0 14:17 ?        00:00:00 [kblockd]
-root          72       2  0 14:17 ?        00:00:00 [blkcg_punt_bio]
-root          73       2  0 14:17 ?        00:00:00 [tpm_dev_wq]
-root          74       2  0 14:17 ?        00:00:00 [ata_sff]
-root          75       2  0 14:17 ?        00:00:00 [md]
-root          76       2  0 14:17 ?        00:00:00 [edac-poller]
-root          77       2  0 14:17 ?        00:00:00 [devfreq_wq]
-root          78       2  0 14:17 ?        00:00:00 [watchdogd]
-root          81       2  0 14:17 ?        00:00:00 [kswapd0]
-root          82       2  0 14:17 ?        00:00:00 [ecryptfs-kthrea]
-root          84       2  0 14:17 ?        00:00:00 [kthrotld]
-root          85       2  0 14:17 ?        00:00:00 [acpi_thermal_pm]
-root          86       2  0 14:17 ?        00:00:00 [scsi_eh_0]
-root          87       2  0 14:17 ?        00:00:00 [scsi_tmf_0]
-root          88       2  0 14:17 ?        00:00:00 [scsi_eh_1]
-root          89       2  0 14:17 ?        00:00:00 [scsi_tmf_1]
-root          91       2  0 14:17 ?        00:00:00 [vfio-irqfd-clea]
-root          93       2  0 14:17 ?        00:00:00 [ipv6_addrconf]
-root         102       2  0 14:17 ?        00:00:00 [kstrp]
-root         105       2  0 14:17 ?        00:00:00 [kworker/u3:0]
-root         118       2  0 14:17 ?        00:00:00 [charger_manager]
-root         158       2  0 14:17 ?        00:00:00 [scsi_eh_2]
-root         161       2  0 14:17 ?        00:00:00 [scsi_tmf_2]
-root         163       2  0 14:17 ?        00:00:00 [kworker/0:1H-kblockd]
-root         191       2  0 14:17 ?        00:00:00 [jbd2/sda1-8]
-root         192       2  0 14:17 ?        00:00:00 [ext4-rsv-conver]
-root         231       1  0 14:17 ?        00:00:00 /lib/systemd/systemd-journald
-root         265       1  0 14:17 ?        00:00:00 /lib/systemd/systemd-udevd
-root         266       2  0 14:17 ?        00:00:00 [loop0]
-root         267       2  0 14:17 ?        00:00:00 [loop1]
-root         268       2  0 14:17 ?        00:00:00 [loop2]
-root         269       2  0 14:17 ?        00:00:00 [loop3]
-root         270       2  0 14:17 ?        00:00:00 [loop4]
-systemd+     283       1  0 14:17 ?        00:00:00 /lib/systemd/systemd-resolved
-root         332       2  0 14:17 ?        00:00:00 [iprt-VBoxWQueue]
-root         351       2  0 14:17 ?        00:00:00 [cryptd]
-root         357       2  0 14:17 ?        00:00:00 [irq/18-vmwgfx]
-root         360       2  0 14:17 ?        00:00:00 [ttm_swap]
-root         442       1  0 14:17 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
-root         443       1  0 14:17 ?        00:00:00 /usr/sbin/acpid
-avahi        448       1  0 14:17 ?        00:00:00 avahi-daemon: running [oleg-VirtualBox.local]
-root         451       1  0 14:17 ?        00:00:00 /usr/sbin/cron -f
-root         452       1  0 14:17 ?        00:00:00 /usr/sbin/cupsd -l
-message+     453       1  0 14:17 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         454       1  0 14:17 ?        00:00:03 /usr/sbin/NetworkManager --no-daemon
-root         477       1  0 14:17 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         478       1  0 14:17 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
-syslog       486       1  0 14:17 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
-root         489       1  0 14:17 ?        00:00:00 /usr/libexec/switcheroo-control
-root         490       1  0 14:17 ?        00:00:00 /lib/systemd/systemd-logind
-root         492       1  0 14:17 ?        00:00:00 /usr/lib/udisks2/udisksd
-root         497       1  0 14:17 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
-avahi        507     448  0 14:17 ?        00:00:00 avahi-daemon: chroot helper
-colord       526       1  0 14:17 ?        00:00:00 /usr/libexec/colord
-root         527       1  0 14:17 ?        00:00:00 /usr/sbin/cups-browsed
-root         536       1  0 14:17 ?        00:00:00 /usr/sbin/ModemManager --filter-policy=strict
-root         551       1  0 14:17 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-whoopsie     626       1  0 14:17 ?        00:00:00 /usr/bin/whoopsie -f
-kernoops     627       1  0 14:17 ?        00:00:00 /usr/sbin/kerneloops --test
-kernoops     629       1  0 14:17 ?        00:00:00 /usr/sbin/kerneloops
-root         761       1  0 14:17 ?        00:00:00 /usr/sbin/gdm3
-root         771       1  0 14:17 ?        00:00:00 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
-root         780     761  0 14:17 ?        00:00:00 gdm-session-worker [pam/gdm-autologin]
-oleg         785       1  0 14:17 ?        00:00:00 /lib/systemd/systemd --user
-oleg         786     785  0 14:17 ?        00:00:00 (sd-pam)
-oleg         791     785  0 14:17 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-oleg         794     785  0 14:17 ?        00:00:00 /usr/libexec/tracker-miner-fs
-oleg         796       1  0 14:17 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-rtkit        800       1  0 14:17 ?        00:00:00 /usr/libexec/rtkit-daemon
-oleg         801     780  0 14:17 tty2     00:00:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-oleg         806     785  0 14:17 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-oleg         808     801  0 14:17 tty2     00:00:11 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
-oleg         811     785  0 14:17 ?        00:00:00 /usr/libexec/gvfsd
-oleg         816     785  0 14:17 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
-oleg         823     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
-oleg         842     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
-oleg         846     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
-oleg         850     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
-oleg         854     785  0 14:17 ?        00:00:00 /usr/libexec/goa-daemon
-oleg         867     785  0 14:17 ?        00:00:00 /usr/libexec/goa-identity-service
-oleg         869     785  0 14:17 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
-root         877       1  0 14:17 ?        00:00:00 /usr/lib/upower/upowerd
-oleg         887     801  0 14:17 tty2     00:00:00 /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu
-oleg         970       1  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --clipboard
-oleg         971     970  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --clipboard
-oleg         981       1  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --seamless
-oleg         982     981  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --seamless
-oleg         988       1  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --draganddrop
-oleg         989     988  0 14:17 ?        00:00:09 /usr/bin/VBoxClient --draganddrop
-oleg         996       1  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
-oleg         997     996  0 14:17 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
-oleg        1001     887  0 14:17 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
-oleg        1020     785  0 14:17 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
-oleg        1026    1020  0 14:17 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-oleg        1031     785  0 14:17 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
-oleg        1037     785  0 14:17 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
-oleg        1052     785  0 14:17 ?        00:00:27 /usr/bin/gnome-shell
-oleg        1071    1052  0 14:17 ?        00:00:00 ibus-daemon --panel disable --xim
-oleg        1075    1071  0 14:17 ?        00:00:00 /usr/libexec/ibus-memconf
-oleg        1076    1071  0 14:17 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
-oleg        1080     785  0 14:17 ?        00:00:00 /usr/libexec/ibus-x11 --kill-daemon
-oleg        1083     785  0 14:17 ?        00:00:00 /usr/libexec/ibus-portal
-oleg        1093     785  0 14:17 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
-oleg        1097     785  0 14:17 ?        00:00:00 /usr/libexec/xdg-permission-store
-oleg        1102     785  0 14:17 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
-oleg        1108     785  0 14:17 ?        00:00:00 /usr/libexec/evolution-source-registry
-oleg        1116     785  0 14:17 ?        00:00:00 /usr/libexec/evolution-calendar-factory
-oleg        1126     785  0 14:17 ?        00:00:00 /usr/libexec/dconf-service
-oleg        1133     785  0 14:17 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
-oleg        1157     785  0 14:17 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-oleg        1163     811  0 14:17 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.4 /org/gtk/gvfs/exec_spaw/0
-oleg        1170     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-a11y-settings
-oleg        1175     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-color
-oleg        1178     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-datetime
-oleg        1179     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-housekeeping
-oleg        1182     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-keyboard
-oleg        1184     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-media-keys
-oleg        1185     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-power
-oleg        1188     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-print-notifications
-oleg        1189     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-rfkill
-oleg        1192     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
-oleg        1193     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-sharing
-oleg        1194     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-smartcard
-oleg        1206     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-sound
-oleg        1210     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-usb-protection
-oleg        1211     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-wacom
-oleg        1215     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-wwan
-oleg        1218     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-xsettings
-oleg        1231    1037  0 14:17 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
-oleg        1243    1037  0 14:17 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
-oleg        1271    1071  0 14:17 ?        00:00:00 /usr/libexec/ibus-engine-simple
-oleg        1273     785  0 14:17 ?        00:00:00 /usr/libexec/gsd-printer
-root        1475       2  0 14:17 ?        00:00:00 [loop5]
-root        1546       2  0 14:18 ?        00:00:00 [loop6]
-root        1585       1  0 14:18 ?        00:00:22 /usr/lib/snapd/snapd
-oleg        1630     785  0 14:18 ?        00:00:00 /usr/libexec/gvfsd-metadata
-oleg        1633    1037  0 14:18 ?        00:00:00 update-notifier
-root        1776       2  0 14:19 ?        00:00:00 [loop7]
-root        1836       2  0 14:19 ?        00:00:00 [loop8]
-root        1989       2  0 14:20 ?        00:00:00 [loop9]
-oleg        2400     785  0 14:33 ?        00:00:05 /usr/libexec/gnome-terminal-server
-oleg        2408    2400  0 14:33 pts/0    00:00:00 bash
-root        2565       2  0 14:42 ?        00:00:01 [kworker/0:2-events]
-root        2566       1  0 14:42 ?        00:00:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
-root        2740       2  0 15:12 ?        00:00:00 [kworker/0:1-cgroup_destroy]
-root        2795       2  0 15:18 ?        00:00:00 [kworker/u2:1-events_power_efficient]
-oleg        2934    2408  0 15:25 pts/0    00:00:00 ps -ef
-oleg@oleg-VirtualBox:~$ 
+36 обновлений могут быть установлены прямо сейчас.
+0 из этих обновлений, являются обновлениями безопасности.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Sun Nov 22 18:53:22 2020 from 192.168.1.38
+oleg@oleg-VirtualBox:~$ echo 'line1' > file1.txt
+oleg@oleg-VirtualBox:~$ cp file1.txt file2.txt
+oleg@oleg-VirtualBox:~$ ln -s file1.txt file2.txt
+ln: не удалось создать символьную ссылку 'file2.txt': Файл существует
+oleg@oleg-VirtualBox:~$ ln -s file1.txt file3.txt
+oleg@oleg-VirtualBox:~$ ln file1.txt file4.txt
+oleg@oleg-VirtualBox:~$ ls -la
+итого 896
+drwxr-xr-x 16 oleg oleg   4096 ноя 29 11:53  .
+drwxr-xr-x  5 root root   4096 ноя 22 19:53  ..
+-rw-------  1 oleg oleg    706 ноя 27 15:25  .bash_history
+-rw-r--r--  1 oleg oleg    220 ноя 15 13:12  .bash_logout
+-rw-r--r--  1 oleg oleg   3771 ноя 15 13:12  .bashrc
+drwx------ 12 oleg oleg   4096 ноя 15 14:29  .cache
+drwx------ 12 oleg oleg   4096 ноя 15 14:29  .config
+-rw-rw-r--  1 oleg oleg   5645 ноя 27 14:34  errors.txt
+-rw-rw-r--  2 oleg oleg      6 ноя 29 11:48  file1.txt
+-rw-rw-r--  1 oleg oleg      6 ноя 29 11:51  file2.txt
+lrwxrwxrwx  1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
+-rw-rw-r--  2 oleg oleg      6 ноя 29 11:48  file4.txt
+-rw-rw-r--  1 oleg oleg    508 ноя 25 11:25  file_name
+drwx------  3 oleg oleg   4096 ноя 15 13:17  .gnupg
+drwxrwxr-x  2 oleg oleg   4096 ноя 19 17:06  lesson2
+drwxrwxr-x  2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
+drwxr-xr-x  3 oleg oleg   4096 ноя 15 13:17  .local
+-rw-r--r--  1 oleg oleg    807 ноя 15 13:12  .profile
+-rw-r--r--  1 oleg oleg      0 ноя 15 13:18  .sudo_as_admin_successful
+-rw-rw-r--  1 oleg oleg     88 ноя 27 14:47  test_file.txt
+-rw-rw-r--  1 oleg oleg 391950 ноя 27 14:34  test.txt
+-rw-rw-r--  1 oleg oleg 391516 ноя 25 10:36  text.txt
+-rw-r-----  1 oleg oleg      6 ноя 29 11:45  .vboxclient-clipboard.pid
+-rw-r-----  1 oleg oleg      6 ноя 29 11:45  .vboxclient-display-svga-x11.pid
+-rw-r-----  1 oleg oleg      6 ноя 29 11:45  .vboxclient-draganddrop.pid
+-rw-r-----  1 oleg oleg      6 ноя 29 11:45  .vboxclient-seamless.pid
+-rw-------  1 oleg oleg   1300 ноя 19 17:52  .viminfo
+drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Видео
+drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Документы
+drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Загрузки
+drwxr-xr-x  2 oleg oleg   4096 ноя 15 14:38  Изображения
+drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Музыка
+drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Общедоступные
+drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
+drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Шаблоны
+oleg@oleg-VirtualBox:~$ ls -la grep file
+ls: невозможно получить доступ к 'grep': Нет такого файла или каталога
+ls: невозможно получить доступ к 'file': Нет такого файла или каталога
+oleg@oleg-VirtualBox:~$ ls -la | grep file
+-rw-rw-r--  2 oleg oleg      6 ноя 29 11:48 file1.txt
+-rw-rw-r--  1 oleg oleg      6 ноя 29 11:51 file2.txt
+lrwxrwxrwx  1 oleg oleg      9 ноя 29 11:52 file3.txt -> file1.txt
+-rw-rw-r--  2 oleg oleg      6 ноя 29 11:48 file4.txt
+-rw-rw-r--  1 oleg oleg    508 ноя 25 11:25 file_name
+-rw-r--r--  1 oleg oleg    807 ноя 15 13:12 .profile
+-rw-rw-r--  1 oleg oleg     88 ноя 27 14:47 test_file.txt
+oleg@oleg-VirtualBox:~$ ls -li | grep file
+260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48 file1.txt
+260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51 file2.txt
+260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52 file3.txt -> file1.txt
+260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48 file4.txt
+262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25 file_name
+260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47 test_file.txt
+oleg@oleg-VirtualBox:~$ mv file1.txt file_new.txt
+oleg@oleg-VirtualBox:~$ ls -la | grep file
+-rw-rw-r--  1 oleg oleg      6 ноя 29 11:51 file2.txt
+lrwxrwxrwx  1 oleg oleg      9 ноя 29 11:52 file3.txt -> file1.txt
+-rw-rw-r--  2 oleg oleg      6 ноя 29 11:48 file4.txt
+-rw-rw-r--  1 oleg oleg    508 ноя 25 11:25 file_name
+-rw-rw-r--  2 oleg oleg      6 ноя 29 11:48 file_new.txt
+-rw-r--r--  1 oleg oleg    807 ноя 15 13:12 .profile
+-rw-rw-r--  1 oleg oleg     88 ноя 27 14:47 test_file.txt
+oleg@oleg-VirtualBox:~$ ls -li
+итого 836
+273139 -rw-rw-r-- 1 oleg oleg   5645 ноя 27 14:34  errors.txt
+260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51  file2.txt
+260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
+260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file4.txt
+262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25  file_name
+260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file_new.txt
+261291 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:06  lesson2
+264292 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
+260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47  test_file.txt
+260978 -rw-rw-r-- 1 oleg oleg 391950 ноя 27 14:34  test.txt
+261072 -rw-rw-r-- 1 oleg oleg 391516 ноя 25 10:36  text.txt
+392171 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Видео
+392168 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Документы
+392165 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Загрузки
+392170 drwxr-xr-x 2 oleg oleg   4096 ноя 15 14:38  Изображения
+392169 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Музыка
+392167 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Общедоступные
+392164 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
+392166 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Шаблоны
+oleg@oleg-VirtualBox:~$ ln -s file_new.txt file_new_link.txt
+oleg@oleg-VirtualBox:~$ pwd
+/home/oleg
+oleg@oleg-VirtualBox:~$ ln -s /home/oleg/file_new.txt  file_full_link.txt
+oleg@oleg-VirtualBox:~$ ls -li
+итого 836
+273139 -rw-rw-r-- 1 oleg oleg   5645 ноя 27 14:34  errors.txt
+260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51  file2.txt
+260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
+260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file4.txt
+267919 lrwxrwxrwx 1 oleg oleg     23 ноя 29 12:01  file_full_link.txt -> /home/oleg/file_new.txt
+262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25  file_name
+267915 lrwxrwxrwx 1 oleg oleg     12 ноя 29 12:00  file_new_link.txt -> file_new.txt
+260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file_new.txt
+261291 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:06  lesson2
+264292 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
+260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47  test_file.txt
+260978 -rw-rw-r-- 1 oleg oleg 391950 ноя 27 14:34  test.txt
+261072 -rw-rw-r-- 1 oleg oleg 391516 ноя 25 10:36  text.txt
+392171 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Видео
+392168 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Документы
+392165 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Загрузки
+392170 drwxr-xr-x 2 oleg oleg   4096 ноя 15 14:38  Изображения
+392169 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Музыка
+392167 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Общедоступные
+392164 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
+392166 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Шаблоны
+oleg@oleg-VirtualBox:~$ mkdir lesson5
+oleg@oleg-VirtualBox:~$ mv file_new.txt /home/oleg/lesson5
+oleg@oleg-VirtualBox:~$ ls
+ errors.txt   file4.txt            file_new_link.txt   lesson5         text.txt    Загрузки      Общедоступные
+ file2.txt    file_full_link.txt   lesson2             test_file.txt   Видео       Изображения  'Рабочий стол'
+ file3.txt    file_name            lesson2_copy        test.txt        Документы   Музыка        Шаблоны
+oleg@oleg-VirtualBox:~$ ls -li
+итого 836
+273139 -rw-rw-r-- 1 oleg oleg   5645 ноя 27 14:34  errors.txt
+260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51  file2.txt
+260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
+260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file4.txt
+267919 lrwxrwxrwx 1 oleg oleg     23 ноя 29 12:01  file_full_link.txt -> /home/oleg/file_new.txt
+262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25  file_name
+267915 lrwxrwxrwx 1 oleg oleg     12 ноя 29 12:00  file_new_link.txt -> file_new.txt
+261291 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:06  lesson2
+264292 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
+267920 drwxrwxr-x 2 oleg oleg   4096 ноя 29 12:03  lesson5
+260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47  test_file.txt
+260978 -rw-rw-r-- 1 oleg oleg 391950 ноя 27 14:34  test.txt
+261072 -rw-rw-r-- 1 oleg oleg 391516 ноя 25 10:36  text.txt
+392171 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Видео
+392168 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Документы
+392165 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Загрузки
+392170 drwxr-xr-x 2 oleg oleg   4096 ноя 15 14:38  Изображения
+392169 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Музыка
+392167 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Общедоступные
+392164 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
+392166 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Шаблоны
+oleg@oleg-VirtualBox:~$ touch access1.txt
+oleg@oleg-VirtualBox:~$ touch access2.txt
+oleg@oleg-VirtualBox:~$ ls -li
+итого 836
+262128 -rw-rw-r-- 1 oleg oleg      0 ноя 29 12:10  access1.txt
+267922 -rw-rw-r-- 1 oleg oleg      0 ноя 29 12:10  access2.txt
+273139 -rw-rw-r-- 1 oleg oleg   5645 ноя 27 14:34  errors.txt
+260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51  file2.txt
+260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
+260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file4.txt
+267919 lrwxrwxrwx 1 oleg oleg     23 ноя 29 12:01  file_full_link.txt -> /home/oleg/file_new.txt
+262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25  file_name
+267915 lrwxrwxrwx 1 oleg oleg     12 ноя 29 12:00  file_new_link.txt -> file_new.txt
+261291 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:06  lesson2
+264292 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
+267920 drwxrwxr-x 2 oleg oleg   4096 ноя 29 12:03  lesson5
+260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47  test_file.txt
+260978 -rw-rw-r-- 1 oleg oleg 391950 ноя 27 14:34  test.txt
+261072 -rw-rw-r-- 1 oleg oleg 391516 ноя 25 10:36  text.txt
+392171 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Видео
+392168 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Документы
+392165 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Загрузки
+392170 drwxr-xr-x 2 oleg oleg   4096 ноя 15 14:38  Изображения
+392169 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Музыка
+392167 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Общедоступные
+392164 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
+392166 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Шаблоны
+oleg@oleg-VirtualBox:~$ chmod 664 access1.txt
+oleg@oleg-VirtualBox:~$ chmodg g-rw access2.txt
+
+Команда «chmodg» не найдена. Возможно, вы имели в виду:
+
+  command 'chmod' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+oleg@oleg-VirtualBox:~$ chmod g-rw access2.txt
+oleg@oleg-VirtualBox:~$ chmod o-r access2.txt
+oleg@oleg-VirtualBox:~$ ls -li | grep access
+262128 -rw-rw-r-- 1 oleg oleg      0 ноя 29 12:10 access1.txt
+267922 -rw------- 1 oleg oleg      0 ноя 29 12:10 access2.txt
+oleg@oleg-VirtualBox:~$ adduser testuser1
+adduser: Только суперпользователь может добавить пользователя или группу в систему.
+oleg@oleg-VirtualBox:~$ sudo adduser testuser1
+Добавляется пользователь «testuser1» ...
+Добавляется новая группа «testuser1» (1006) ...
+Добавляется новый пользователь «testuser1» (1001) в группу «testuser1» ...
+Создаётся домашний каталог «/home/testuser1» ...
+Копирование файлов из «/etc/skel» ...
+Новый пароль :
+Повторите ввод нового пароля :
+passwd: пароль успешно обновлён
+Изменение информации о пользователе testuser1
+Введите новое значение или нажмите ENTER для выбора значения по умолчанию
+        Полное имя []:
+        Номер комнаты []:
+        Рабочий телефон []:
+        Домашний телефон []:
+        Другое []:
+Данная информация корректна? [Y/n] y
+oleg@oleg-VirtualBox:~$ usermod -aG sudo testuser1
+usermod: Permission denied.
+usermod: не удалось заблокировать /etc/passwd; попробуйте ещё раз позже.
+oleg@oleg-VirtualBox:~$ sudo usermod -aG sudo testuser1
+oleg@oleg-VirtualBox:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,oleg
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:oleg
+floppy:x:25:
+tape:x:26:
+sudo:x:27:oleg,user3,testuser1
+audio:x:29:pulse
+dip:x:30:oleg
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:oleg
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+bluetooth:x:112:
+ssl-cert:x:113:
+uuidd:x:114:
+tcpdump:x:115:
+avahi-autoipd:x:116:
+rtkit:x:117:
+ssh:x:118:
+netdev:x:119:
+lpadmin:x:120:oleg
+avahi:x:121:
+scanner:x:122:saned
+saned:x:123:
+nm-openvpn:x:124:
+whoopsie:x:125:
+colord:x:126:
+geoclue:x:127:
+pulse:x:128:
+pulse-access:x:129:
+gdm:x:130:
+lxd:x:131:oleg
+oleg:x:1000:
+sambashare:x:132:oleg
+systemd-coredump:x:999:
+vboxsf:x:998:
+user1:x:1001:
+user2:x:1002:
+user3:x:1003:
+team1:x:1004:
+team2:x:1005:
+testuser1:x:1006:
+oleg@oleg-VirtualBox:~$
