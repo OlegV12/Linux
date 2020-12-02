@@ -1,315 +1,86 @@
 Microsoft Windows [Version 10.0.19041.630]
 (c) Корпорация Майкрософт (Microsoft Corporation), 2020. Все права защищены.
 
-C:\Users\olegv>ssh oleg@172.25.80.42
-The authenticity of host '172.25.80.42 (172.25.80.42)' can't be established.
+C:\Users\olegv>ssh oleg@192.168.1.39
+The authenticity of host '192.168.1.39 (192.168.1.39)' can't be established.
 ECDSA key fingerprint is SHA256:7vukyp0L1pg5LzEaVofRTkfckIY6N9gZVF+c5Fe8LaI.
 Are you sure you want to continue connecting (yes/no)? y
 Please type 'yes' or 'no': yes
-Warning: Permanently added '172.25.80.42' (ECDSA) to the list of known hosts.
-oleg@172.25.80.42's password:
+Warning: Permanently added '192.168.1.39' (ECDSA) to the list of known hosts.
+oleg@192.168.1.39's password:
 Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-53-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-36 обновлений могут быть установлены прямо сейчас.
+33 обновления могут быть установлены прямо сейчас.
 0 из этих обновлений, являются обновлениями безопасности.
 Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
 
 Your Hardware Enablement Stack (HWE) is supported until April 2025.
-Last login: Sun Nov 22 18:53:22 2020 from 192.168.1.38
-oleg@oleg-VirtualBox:~$ echo 'line1' > file1.txt
-oleg@oleg-VirtualBox:~$ cp file1.txt file2.txt
-oleg@oleg-VirtualBox:~$ ln -s file1.txt file2.txt
-ln: не удалось создать символьную ссылку 'file2.txt': Файл существует
-oleg@oleg-VirtualBox:~$ ln -s file1.txt file3.txt
-oleg@oleg-VirtualBox:~$ ln file1.txt file4.txt
-oleg@oleg-VirtualBox:~$ ls -la
-итого 896
-drwxr-xr-x 16 oleg oleg   4096 ноя 29 11:53  .
-drwxr-xr-x  5 root root   4096 ноя 22 19:53  ..
--rw-------  1 oleg oleg    706 ноя 27 15:25  .bash_history
--rw-r--r--  1 oleg oleg    220 ноя 15 13:12  .bash_logout
--rw-r--r--  1 oleg oleg   3771 ноя 15 13:12  .bashrc
-drwx------ 12 oleg oleg   4096 ноя 15 14:29  .cache
-drwx------ 12 oleg oleg   4096 ноя 15 14:29  .config
--rw-rw-r--  1 oleg oleg   5645 ноя 27 14:34  errors.txt
--rw-rw-r--  2 oleg oleg      6 ноя 29 11:48  file1.txt
--rw-rw-r--  1 oleg oleg      6 ноя 29 11:51  file2.txt
-lrwxrwxrwx  1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
--rw-rw-r--  2 oleg oleg      6 ноя 29 11:48  file4.txt
--rw-rw-r--  1 oleg oleg    508 ноя 25 11:25  file_name
-drwx------  3 oleg oleg   4096 ноя 15 13:17  .gnupg
-drwxrwxr-x  2 oleg oleg   4096 ноя 19 17:06  lesson2
-drwxrwxr-x  2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
-drwxr-xr-x  3 oleg oleg   4096 ноя 15 13:17  .local
--rw-r--r--  1 oleg oleg    807 ноя 15 13:12  .profile
--rw-r--r--  1 oleg oleg      0 ноя 15 13:18  .sudo_as_admin_successful
--rw-rw-r--  1 oleg oleg     88 ноя 27 14:47  test_file.txt
--rw-rw-r--  1 oleg oleg 391950 ноя 27 14:34  test.txt
--rw-rw-r--  1 oleg oleg 391516 ноя 25 10:36  text.txt
--rw-r-----  1 oleg oleg      6 ноя 29 11:45  .vboxclient-clipboard.pid
--rw-r-----  1 oleg oleg      6 ноя 29 11:45  .vboxclient-display-svga-x11.pid
--rw-r-----  1 oleg oleg      6 ноя 29 11:45  .vboxclient-draganddrop.pid
--rw-r-----  1 oleg oleg      6 ноя 29 11:45  .vboxclient-seamless.pid
--rw-------  1 oleg oleg   1300 ноя 19 17:52  .viminfo
-drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Видео
-drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Документы
-drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Загрузки
-drwxr-xr-x  2 oleg oleg   4096 ноя 15 14:38  Изображения
-drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Музыка
-drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Общедоступные
-drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
-drwxr-xr-x  2 oleg oleg   4096 ноя 15 13:17  Шаблоны
-oleg@oleg-VirtualBox:~$ ls -la grep file
-ls: невозможно получить доступ к 'grep': Нет такого файла или каталога
-ls: невозможно получить доступ к 'file': Нет такого файла или каталога
-oleg@oleg-VirtualBox:~$ ls -la | grep file
--rw-rw-r--  2 oleg oleg      6 ноя 29 11:48 file1.txt
--rw-rw-r--  1 oleg oleg      6 ноя 29 11:51 file2.txt
-lrwxrwxrwx  1 oleg oleg      9 ноя 29 11:52 file3.txt -> file1.txt
--rw-rw-r--  2 oleg oleg      6 ноя 29 11:48 file4.txt
--rw-rw-r--  1 oleg oleg    508 ноя 25 11:25 file_name
--rw-r--r--  1 oleg oleg    807 ноя 15 13:12 .profile
--rw-rw-r--  1 oleg oleg     88 ноя 27 14:47 test_file.txt
-oleg@oleg-VirtualBox:~$ ls -li | grep file
-260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48 file1.txt
-260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51 file2.txt
-260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52 file3.txt -> file1.txt
-260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48 file4.txt
-262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25 file_name
-260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47 test_file.txt
-oleg@oleg-VirtualBox:~$ mv file1.txt file_new.txt
-oleg@oleg-VirtualBox:~$ ls -la | grep file
--rw-rw-r--  1 oleg oleg      6 ноя 29 11:51 file2.txt
-lrwxrwxrwx  1 oleg oleg      9 ноя 29 11:52 file3.txt -> file1.txt
--rw-rw-r--  2 oleg oleg      6 ноя 29 11:48 file4.txt
--rw-rw-r--  1 oleg oleg    508 ноя 25 11:25 file_name
--rw-rw-r--  2 oleg oleg      6 ноя 29 11:48 file_new.txt
--rw-r--r--  1 oleg oleg    807 ноя 15 13:12 .profile
--rw-rw-r--  1 oleg oleg     88 ноя 27 14:47 test_file.txt
-oleg@oleg-VirtualBox:~$ ls -li
-итого 836
-273139 -rw-rw-r-- 1 oleg oleg   5645 ноя 27 14:34  errors.txt
-260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51  file2.txt
-260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
-260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file4.txt
-262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25  file_name
-260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file_new.txt
-261291 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:06  lesson2
-264292 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
-260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47  test_file.txt
-260978 -rw-rw-r-- 1 oleg oleg 391950 ноя 27 14:34  test.txt
-261072 -rw-rw-r-- 1 oleg oleg 391516 ноя 25 10:36  text.txt
-392171 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Видео
-392168 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Документы
-392165 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Загрузки
-392170 drwxr-xr-x 2 oleg oleg   4096 ноя 15 14:38  Изображения
-392169 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Музыка
-392167 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Общедоступные
-392164 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
-392166 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Шаблоны
-oleg@oleg-VirtualBox:~$ ln -s file_new.txt file_new_link.txt
-oleg@oleg-VirtualBox:~$ pwd
-/home/oleg
-oleg@oleg-VirtualBox:~$ ln -s /home/oleg/file_new.txt  file_full_link.txt
-oleg@oleg-VirtualBox:~$ ls -li
-итого 836
-273139 -rw-rw-r-- 1 oleg oleg   5645 ноя 27 14:34  errors.txt
-260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51  file2.txt
-260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
-260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file4.txt
-267919 lrwxrwxrwx 1 oleg oleg     23 ноя 29 12:01  file_full_link.txt -> /home/oleg/file_new.txt
-262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25  file_name
-267915 lrwxrwxrwx 1 oleg oleg     12 ноя 29 12:00  file_new_link.txt -> file_new.txt
-260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file_new.txt
-261291 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:06  lesson2
-264292 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
-260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47  test_file.txt
-260978 -rw-rw-r-- 1 oleg oleg 391950 ноя 27 14:34  test.txt
-261072 -rw-rw-r-- 1 oleg oleg 391516 ноя 25 10:36  text.txt
-392171 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Видео
-392168 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Документы
-392165 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Загрузки
-392170 drwxr-xr-x 2 oleg oleg   4096 ноя 15 14:38  Изображения
-392169 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Музыка
-392167 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Общедоступные
-392164 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
-392166 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Шаблоны
-oleg@oleg-VirtualBox:~$ mkdir lesson5
-oleg@oleg-VirtualBox:~$ mv file_new.txt /home/oleg/lesson5
-oleg@oleg-VirtualBox:~$ ls
- errors.txt   file4.txt            file_new_link.txt   lesson5         text.txt    Загрузки      Общедоступные
- file2.txt    file_full_link.txt   lesson2             test_file.txt   Видео       Изображения  'Рабочий стол'
- file3.txt    file_name            lesson2_copy        test.txt        Документы   Музыка        Шаблоны
-oleg@oleg-VirtualBox:~$ ls -li
-итого 836
-273139 -rw-rw-r-- 1 oleg oleg   5645 ноя 27 14:34  errors.txt
-260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51  file2.txt
-260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
-260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file4.txt
-267919 lrwxrwxrwx 1 oleg oleg     23 ноя 29 12:01  file_full_link.txt -> /home/oleg/file_new.txt
-262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25  file_name
-267915 lrwxrwxrwx 1 oleg oleg     12 ноя 29 12:00  file_new_link.txt -> file_new.txt
-261291 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:06  lesson2
-264292 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
-267920 drwxrwxr-x 2 oleg oleg   4096 ноя 29 12:03  lesson5
-260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47  test_file.txt
-260978 -rw-rw-r-- 1 oleg oleg 391950 ноя 27 14:34  test.txt
-261072 -rw-rw-r-- 1 oleg oleg 391516 ноя 25 10:36  text.txt
-392171 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Видео
-392168 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Документы
-392165 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Загрузки
-392170 drwxr-xr-x 2 oleg oleg   4096 ноя 15 14:38  Изображения
-392169 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Музыка
-392167 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Общедоступные
-392164 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
-392166 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Шаблоны
-oleg@oleg-VirtualBox:~$ touch access1.txt
-oleg@oleg-VirtualBox:~$ touch access2.txt
-oleg@oleg-VirtualBox:~$ ls -li
-итого 836
-262128 -rw-rw-r-- 1 oleg oleg      0 ноя 29 12:10  access1.txt
-267922 -rw-rw-r-- 1 oleg oleg      0 ноя 29 12:10  access2.txt
-273139 -rw-rw-r-- 1 oleg oleg   5645 ноя 27 14:34  errors.txt
-260980 -rw-rw-r-- 1 oleg oleg      6 ноя 29 11:51  file2.txt
-260685 lrwxrwxrwx 1 oleg oleg      9 ноя 29 11:52  file3.txt -> file1.txt
-260973 -rw-rw-r-- 2 oleg oleg      6 ноя 29 11:48  file4.txt
-267919 lrwxrwxrwx 1 oleg oleg     23 ноя 29 12:01  file_full_link.txt -> /home/oleg/file_new.txt
-262049 -rw-rw-r-- 1 oleg oleg    508 ноя 25 11:25  file_name
-267915 lrwxrwxrwx 1 oleg oleg     12 ноя 29 12:00  file_new_link.txt -> file_new.txt
-261291 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:06  lesson2
-264292 drwxrwxr-x 2 oleg oleg   4096 ноя 19 17:05  lesson2_copy
-267920 drwxrwxr-x 2 oleg oleg   4096 ноя 29 12:03  lesson5
-260976 -rw-rw-r-- 1 oleg oleg     88 ноя 27 14:47  test_file.txt
-260978 -rw-rw-r-- 1 oleg oleg 391950 ноя 27 14:34  test.txt
-261072 -rw-rw-r-- 1 oleg oleg 391516 ноя 25 10:36  text.txt
-392171 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Видео
-392168 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Документы
-392165 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Загрузки
-392170 drwxr-xr-x 2 oleg oleg   4096 ноя 15 14:38  Изображения
-392169 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Музыка
-392167 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Общедоступные
-392164 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17 'Рабочий стол'
-392166 drwxr-xr-x 2 oleg oleg   4096 ноя 15 13:17  Шаблоны
-oleg@oleg-VirtualBox:~$ chmod 664 access1.txt
-oleg@oleg-VirtualBox:~$ chmodg g-rw access2.txt
+*** Требуется перезагрузка системы ***
+Last login: Sun Nov 29 11:47:52 2020 from 172.25.80.38
+oleg@oleg-VirtualBox:~$ cat text.txt
+line1
 
-Команда «chmodg» не найдена. Возможно, вы имели в виду:
+line2
 
-  command 'chmod' from deb coreutils (8.30-3ubuntu2)
 
-Try: sudo apt install <deb name>
 
-oleg@oleg-VirtualBox:~$ chmod g-rw access2.txt
-oleg@oleg-VirtualBox:~$ chmod o-r access2.txt
-oleg@oleg-VirtualBox:~$ ls -li | grep access
-262128 -rw-rw-r-- 1 oleg oleg      0 ноя 29 12:10 access1.txt
-267922 -rw------- 1 oleg oleg      0 ноя 29 12:10 access2.txt
-oleg@oleg-VirtualBox:~$ adduser testuser1
-adduser: Только суперпользователь может добавить пользователя или группу в систему.
-oleg@oleg-VirtualBox:~$ sudo adduser testuser1
-Добавляется пользователь «testuser1» ...
-Добавляется новая группа «testuser1» (1006) ...
-Добавляется новый пользователь «testuser1» (1001) в группу «testuser1» ...
-Создаётся домашний каталог «/home/testuser1» ...
-Копирование файлов из «/etc/skel» ...
-Новый пароль :
-Повторите ввод нового пароля :
-passwd: пароль успешно обновлён
-Изменение информации о пользователе testuser1
-Введите новое значение или нажмите ENTER для выбора значения по умолчанию
-        Полное имя []:
-        Номер комнаты []:
-        Рабочий телефон []:
-        Домашний телефон []:
-        Другое []:
-Данная информация корректна? [Y/n] y
-oleg@oleg-VirtualBox:~$ usermod -aG sudo testuser1
-usermod: Permission denied.
-usermod: не удалось заблокировать /etc/passwd; попробуйте ещё раз позже.
-oleg@oleg-VirtualBox:~$ sudo usermod -aG sudo testuser1
-oleg@oleg-VirtualBox:~$ cat /etc/group
-root:x:0:
-daemon:x:1:
-bin:x:2:
-sys:x:3:
-adm:x:4:syslog,oleg
-tty:x:5:syslog
-disk:x:6:
-lp:x:7:
-mail:x:8:
-news:x:9:
-uucp:x:10:
-man:x:12:
-proxy:x:13:
-kmem:x:15:
-dialout:x:20:
-fax:x:21:
-voice:x:22:
-cdrom:x:24:oleg
-floppy:x:25:
-tape:x:26:
-sudo:x:27:oleg,user3,testuser1
-audio:x:29:pulse
-dip:x:30:oleg
-www-data:x:33:
-backup:x:34:
-operator:x:37:
-list:x:38:
-irc:x:39:
-src:x:40:
-gnats:x:41:
-shadow:x:42:
-utmp:x:43:
-video:x:44:
-sasl:x:45:
-plugdev:x:46:oleg
-staff:x:50:
-games:x:60:
-users:x:100:
-nogroup:x:65534:
-systemd-journal:x:101:
-systemd-network:x:102:
-systemd-resolve:x:103:
-systemd-timesync:x:104:
-crontab:x:105:
-messagebus:x:106:
-input:x:107:
-kvm:x:108:
-render:x:109:
-syslog:x:110:
-tss:x:111:
-bluetooth:x:112:
-ssl-cert:x:113:
-uuidd:x:114:
-tcpdump:x:115:
-avahi-autoipd:x:116:
-rtkit:x:117:
-ssh:x:118:
-netdev:x:119:
-lpadmin:x:120:oleg
-avahi:x:121:
-scanner:x:122:saned
-saned:x:123:
-nm-openvpn:x:124:
-whoopsie:x:125:
-colord:x:126:
-geoclue:x:127:
-pulse:x:128:
-pulse-access:x:129:
-gdm:x:130:
-lxd:x:131:oleg
-oleg:x:1000:
-sambashare:x:132:oleg
-systemd-coredump:x:999:
-vboxsf:x:998:
-user1:x:1001:
-user2:x:1002:
-user3:x:1003:
-team1:x:1004:
-team2:x:1005:
-testuser1:x:1006:
+line3
+
+oleg@oleg-VirtualBox:~$ sed -e /^$/d text.txt | tr [:lower:] [:upper:] > test.txt
+oleg@oleg-VirtualBox:~$ cat test.txt
+LINE1
+LINE2
+LINE3
+oleg@oleg-VirtualBox:~$ ls -l | awk '{ print $1 }' | sort | uniq
+drwxrwxr-x
+drwxr-xr-x
+-rw-rw-r--
+итого
+oleg@oleg-VirtualBox:~$ grep -ir cron /var/log/syslog
+Dec  2 13:30:52 oleg-VirtualBox CRON[3070]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Dec  2 13:35:13 oleg-VirtualBox anacron[2480]: Job `cron.daily' started
+Dec  2 13:35:13 oleg-VirtualBox anacron[5431]: Updated timestamp for job `cron.daily' to 2020-12-02
+Dec  2 13:35:21 oleg-VirtualBox anacron[2480]: Job `cron.daily' terminated
+Dec  2 13:35:21 oleg-VirtualBox anacron[2480]: Normal exit (1 job run)
+Dec  2 13:35:21 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
+Dec  2 14:17:01 oleg-VirtualBox CRON[18325]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec  2 14:30:01 oleg-VirtualBox CRON[18369]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Dec  2 14:34:46 oleg-VirtualBox systemd[1]: Started Run anacron jobs.
+Dec  2 14:34:46 oleg-VirtualBox anacron[18507]: Anacron 2.3 started on 2020-12-02
+Dec  2 14:34:46 oleg-VirtualBox anacron[18507]: Normal exit (0 jobs run)
+Dec  2 14:34:46 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
+Dec  2 15:17:01 oleg-VirtualBox CRON[18786]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec  2 15:30:01 oleg-VirtualBox CRON[18945]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Dec  2 15:31:46 oleg-VirtualBox systemd[1]: Started Run anacron jobs.
+Dec  2 15:31:46 oleg-VirtualBox anacron[18964]: Anacron 2.3 started on 2020-12-02
+Dec  2 15:31:46 oleg-VirtualBox anacron[18964]: Normal exit (0 jobs run)
+Dec  2 15:31:46 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
+Dec  2 16:11:01 oleg-VirtualBox CRON[19683]: (root) CMD (   test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --crond)
+Dec  2 16:17:01 oleg-VirtualBox CRON[23011]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec  2 16:30:01 oleg-VirtualBox CRON[23601]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Dec  2 16:35:14 oleg-VirtualBox systemd[1]: Started Run anacron jobs.
+Dec  2 16:35:15 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
+Dec  2 16:35:15 oleg-VirtualBox anacron[28407]: Anacron 2.3 started on 2020-12-02
+Dec  2 16:35:15 oleg-VirtualBox anacron[28407]: Normal exit (0 jobs run)
+Dec  2 17:17:01 oleg-VirtualBox CRON[30318]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec  2 17:30:01 oleg-VirtualBox CRON[30358]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Dec  2 17:31:19 oleg-VirtualBox systemd[1]: Started Run anacron jobs.
+Dec  2 17:31:19 oleg-VirtualBox anacron[30575]: Anacron 2.3 started on 2020-12-02
+Dec  2 17:31:19 oleg-VirtualBox anacron[30575]: Normal exit (0 jobs run)
+Dec  2 17:31:19 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
+Dec  2 17:33:22 oleg-VirtualBox crontab[30697]: (oleg) LIST (oleg)
+Dec  2 17:37:01 oleg-VirtualBox cron[459]: (*system*) RELOAD (/etc/crontab)
+Dec  2 17:37:01 oleg-VirtualBox cron[459]: Error: bad minute; while reading /etc/crontab
+Dec  2 17:37:01 oleg-VirtualBox cron[459]: (*system*) ERROR (Syntax error, this crontab file will be ignored)
+Dec  2 17:38:59 oleg-VirtualBox crontab[30822]: (oleg) LIST (oleg)
+Dec  2 17:39:01 oleg-VirtualBox cron[459]: (*system*) RELOAD (/etc/crontab)
+Dec  2 17:55:01 oleg-VirtualBox CRON[31413]: (oleg) CMD (~/lesson6/backup.sh)
+Dec  2 17:55:01 oleg-VirtualBox CRON[31412]: (CRON) info (No MTA installed, discarding output)
+oleg@oleg-VirtualBox:~$ echo 'reboot' | at 23:50
+warning: commands will be executed using /bin/sh
+job 2 at Wed Dec  2 23:50:00 2020
 oleg@oleg-VirtualBox:~$
