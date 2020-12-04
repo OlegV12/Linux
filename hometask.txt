@@ -1,86 +1,247 @@
-Microsoft Windows [Version 10.0.19041.630]
-(c) Корпорация Майкрософт (Microsoft Corporation), 2020. Все права защищены.
+oleg@oleg-VirtualBox:~$ apt-add-repository ppa:nginx/stable
+Ошибка: необходимо запускать с правами администратора
+oleg@oleg-VirtualBox:~$ sudo apt-add-repository ppa:nginx/stable
+ This PPA contains the latest Stable Release version of the nginx web server software.
 
-C:\Users\olegv>ssh oleg@192.168.1.39
-The authenticity of host '192.168.1.39 (192.168.1.39)' can't be established.
-ECDSA key fingerprint is SHA256:7vukyp0L1pg5LzEaVofRTkfckIY6N9gZVF+c5Fe8LaI.
-Are you sure you want to continue connecting (yes/no)? y
-Please type 'yes' or 'no': yes
-Warning: Permanently added '192.168.1.39' (ECDSA) to the list of known hosts.
-oleg@192.168.1.39's password:
-Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-53-generic x86_64)
+**Only Non-End-of-Life Ubuntu Releases are supported in this PPA**
 
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
+**Development releases of Ubuntu are not officially supported by this PPA, and uploads for those will not be available until actual final releases for those versions**
+ Больше информации: https://launchpad.net/~nginx/+archive/ubuntu/stable
+Нажмите [ENTER] для продолжения или Ctrl-C, чтобы отменить добавление.
 
-33 обновления могут быть установлены прямо сейчас.
-0 из этих обновлений, являются обновлениями безопасности.
-Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu focal InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]                                 
+Пол:3 http://ppa.launchpad.net/nginx/stable/ubuntu focal InRelease [17,5 kB]                                                                 
+Пол:4 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]         
+Пол:5 http://ru.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]                                  
+Пол:6 http://ru.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [385 kB]                          
+Пол:7 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [692 kB]                                                   
+Пол:8 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main i386 Packages [1 224 B]                                              
+Пол:9 http://ru.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [171 kB]                                                                                                                   
+Пол:10 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [236 kB]                                                                                                           
+Пол:11 http://ru.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 48x48 Icons [50,6 kB]                                                                                                             
+Пол:12 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [11,2 kB]                                                                                                           
+Пол:13 http://ru.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [103 kB]                                                                                                            
+Пол:14 http://ru.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [15,8 kB]                                                                                                           
+Пол:15 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [520 kB]                                                                                                               
+Пол:16 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 Packages [4 944 B]                                                                                                                
+Пол:17 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [700 kB]                                                                                                              
+Пол:18 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [160 kB]                                                                                                                    
+Пол:19 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [137 kB]                                                                                                              
+Пол:20 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [205 kB]                                                                                                       
+Пол:21 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [13,4 kB]                                                                                                       
+Пол:22 http://ru.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [2 464 B]                                                                                                    
+Пол:23 http://ru.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [1 768 B]                                                                                                    
+Пол:24 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main Translation-en [4 572 B]                                                                                                                
+Пол:25 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [391 kB]                                                                                                                   
+Пол:26 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [89,1 kB]                                                                                                                  
+Пол:27 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [24,2 kB]                                                                                                           
+Пол:28 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [5 536 B]                                                                                                            
+Пол:29 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [80,6 kB]                                                                                                            
+Пол:30 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [12,8 kB]                                                                                                            
+Пол:31 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [56,6 kB]                                                                                                       
+Получено 4 417 kB за 14с (306 kB/s)                                                                                                                                                                    
+Чтение списков пакетов… Готово
+oleg@oleg-VirtualBox:~$ niginx --help
 
-Your Hardware Enablement Stack (HWE) is supported until April 2025.
-*** Требуется перезагрузка системы ***
-Last login: Sun Nov 29 11:47:52 2020 from 172.25.80.38
-oleg@oleg-VirtualBox:~$ cat text.txt
-line1
+Команда «niginx» не найдена. Возможно, вы имели в виду:
 
-line2
+  command 'nginx' from deb nginx-core (1.18.0-0ubuntu1)
+  command 'nginx' from deb nginx-extras (1.18.0-0ubuntu1)
+  command 'nginx' from deb nginx-full (1.18.0-0ubuntu1)
+  command 'nginx' from deb nginx-light (1.18.0-0ubuntu1)
 
+Try: sudo apt install <deb name>
 
+oleg@oleg-VirtualBox:~$ nignx --help
 
-line3
+Команда «nignx» не найдена. Возможно, вы имели в виду:
 
-oleg@oleg-VirtualBox:~$ sed -e /^$/d text.txt | tr [:lower:] [:upper:] > test.txt
-oleg@oleg-VirtualBox:~$ cat test.txt
-LINE1
-LINE2
-LINE3
-oleg@oleg-VirtualBox:~$ ls -l | awk '{ print $1 }' | sort | uniq
-drwxrwxr-x
-drwxr-xr-x
--rw-rw-r--
-итого
-oleg@oleg-VirtualBox:~$ grep -ir cron /var/log/syslog
-Dec  2 13:30:52 oleg-VirtualBox CRON[3070]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
-Dec  2 13:35:13 oleg-VirtualBox anacron[2480]: Job `cron.daily' started
-Dec  2 13:35:13 oleg-VirtualBox anacron[5431]: Updated timestamp for job `cron.daily' to 2020-12-02
-Dec  2 13:35:21 oleg-VirtualBox anacron[2480]: Job `cron.daily' terminated
-Dec  2 13:35:21 oleg-VirtualBox anacron[2480]: Normal exit (1 job run)
-Dec  2 13:35:21 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
-Dec  2 14:17:01 oleg-VirtualBox CRON[18325]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Dec  2 14:30:01 oleg-VirtualBox CRON[18369]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
-Dec  2 14:34:46 oleg-VirtualBox systemd[1]: Started Run anacron jobs.
-Dec  2 14:34:46 oleg-VirtualBox anacron[18507]: Anacron 2.3 started on 2020-12-02
-Dec  2 14:34:46 oleg-VirtualBox anacron[18507]: Normal exit (0 jobs run)
-Dec  2 14:34:46 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
-Dec  2 15:17:01 oleg-VirtualBox CRON[18786]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Dec  2 15:30:01 oleg-VirtualBox CRON[18945]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
-Dec  2 15:31:46 oleg-VirtualBox systemd[1]: Started Run anacron jobs.
-Dec  2 15:31:46 oleg-VirtualBox anacron[18964]: Anacron 2.3 started on 2020-12-02
-Dec  2 15:31:46 oleg-VirtualBox anacron[18964]: Normal exit (0 jobs run)
-Dec  2 15:31:46 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
-Dec  2 16:11:01 oleg-VirtualBox CRON[19683]: (root) CMD (   test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --crond)
-Dec  2 16:17:01 oleg-VirtualBox CRON[23011]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Dec  2 16:30:01 oleg-VirtualBox CRON[23601]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
-Dec  2 16:35:14 oleg-VirtualBox systemd[1]: Started Run anacron jobs.
-Dec  2 16:35:15 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
-Dec  2 16:35:15 oleg-VirtualBox anacron[28407]: Anacron 2.3 started on 2020-12-02
-Dec  2 16:35:15 oleg-VirtualBox anacron[28407]: Normal exit (0 jobs run)
-Dec  2 17:17:01 oleg-VirtualBox CRON[30318]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Dec  2 17:30:01 oleg-VirtualBox CRON[30358]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
-Dec  2 17:31:19 oleg-VirtualBox systemd[1]: Started Run anacron jobs.
-Dec  2 17:31:19 oleg-VirtualBox anacron[30575]: Anacron 2.3 started on 2020-12-02
-Dec  2 17:31:19 oleg-VirtualBox anacron[30575]: Normal exit (0 jobs run)
-Dec  2 17:31:19 oleg-VirtualBox systemd[1]: anacron.service: Succeeded.
-Dec  2 17:33:22 oleg-VirtualBox crontab[30697]: (oleg) LIST (oleg)
-Dec  2 17:37:01 oleg-VirtualBox cron[459]: (*system*) RELOAD (/etc/crontab)
-Dec  2 17:37:01 oleg-VirtualBox cron[459]: Error: bad minute; while reading /etc/crontab
-Dec  2 17:37:01 oleg-VirtualBox cron[459]: (*system*) ERROR (Syntax error, this crontab file will be ignored)
-Dec  2 17:38:59 oleg-VirtualBox crontab[30822]: (oleg) LIST (oleg)
-Dec  2 17:39:01 oleg-VirtualBox cron[459]: (*system*) RELOAD (/etc/crontab)
-Dec  2 17:55:01 oleg-VirtualBox CRON[31413]: (oleg) CMD (~/lesson6/backup.sh)
-Dec  2 17:55:01 oleg-VirtualBox CRON[31412]: (CRON) info (No MTA installed, discarding output)
-oleg@oleg-VirtualBox:~$ echo 'reboot' | at 23:50
-warning: commands will be executed using /bin/sh
-job 2 at Wed Dec  2 23:50:00 2020
-oleg@oleg-VirtualBox:~$
+  command 'nginx' from deb nginx-core (1.18.0-0ubuntu1)
+  command 'nginx' from deb nginx-extras (1.18.0-0ubuntu1)
+  command 'nginx' from deb nginx-full (1.18.0-0ubuntu1)
+  command 'nginx' from deb nginx-light (1.18.0-0ubuntu1)
+
+Try: sudo apt install <deb name>
+
+oleg@oleg-VirtualBox:~$ nginx --help
+
+Команда «nginx» не найдена, но может быть установлена с помощью:
+
+sudo apt install nginx-core    # version 1.18.0-0ubuntu1, or
+sudo apt install nginx-extras  # version 1.18.0-0ubuntu1
+sudo apt install nginx-full    # version 1.18.0-0ubuntu1
+sudo apt install nginx-light   # version 1.18.0-0ubuntu1
+
+oleg@oleg-VirtualBox:~$ cat /etc/apt/sources.list.d/nginx-ubuntu-stable-bionic.list
+cat: /etc/apt/sources.list.d/nginx-ubuntu-stable-bionic.list: Нет такого файла или каталога
+oleg@oleg-VirtualBox:~$ cd /etc/apt
+oleg@oleg-VirtualBox:/etc/apt$ ls
+apt.conf.d  auth.conf.d  preferences.d  sources.list  sources.list.d  sources.list.save  trusted.gpg.d
+oleg@oleg-VirtualBox:/etc/apt$ cat sources.list.d
+cat: sources.list.d: Это каталог
+oleg@oleg-VirtualBox:/etc/apt$ cd sources.list.d/
+oleg@oleg-VirtualBox:/etc/apt/sources.list.d$ ls
+nginx-ubuntu-stable-focal.list
+oleg@oleg-VirtualBox:/etc/apt/sources.list.d$ cat nginx-ubuntu-stable-focal.list 
+deb http://ppa.launchpad.net/nginx/stable/ubuntu focal main
+# deb-src http://ppa.launchpad.net/nginx/stable/ubuntu focal main
+oleg@oleg-VirtualBox:/etc/apt/sources.list.d$ cd
+oleg@oleg-VirtualBox:~$ sudo apt install nginx -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Следующий пакет устанавливался автоматически и больше не требуется:
+  libfprint-2-tod1
+Для его удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  geoip-database libgeoip1 libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libnginx-mod-stream-geoip nginx-common nginx-core
+Предлагаемые пакеты:
+  geoip-bin fcgiwrap nginx-doc
+Следующие НОВЫЕ пакеты будут установлены:
+  geoip-database libgeoip1 libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libnginx-mod-stream-geoip nginx nginx-common nginx-core
+Обновлено 0 пакетов, установлено 10 новых пакетов, для удаления отмечено 0 пакетов, и 35 пакетов не обновлено.
+Необходимо скачать 3 960 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 12,8 MB.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 geoip-database all 20191224-2 [3 029 kB]
+Пол:2 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 nginx-common all 1.18.0-3ubuntu1+focal2 [68,6 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 libgeoip1 amd64 1.6.12-6build1 [70,5 kB]
+Пол:4 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-3ubuntu1+focal2 [43,0 kB]
+Пол:5 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 libnginx-mod-mail amd64 1.18.0-3ubuntu1+focal2 [72,9 kB]
+Пол:6 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 libnginx-mod-stream amd64 1.18.0-3ubuntu1+focal2 [97,5 kB]
+Пол:7 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 libnginx-mod-stream-geoip amd64 1.18.0-3ubuntu1+focal2 [40,4 kB]
+Пол:8 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 nginx-core amd64 1.18.0-3ubuntu1+focal2 [457 kB]
+Пол:9 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-3ubuntu1+focal2 [44,8 kB]
+Пол:10 http://ppa.launchpad.net/nginx/stable/ubuntu focal/main amd64 nginx all 1.18.0-3ubuntu1+focal2 [35,6 kB]
+Получено 3 960 kB за 6с (701 kB/s)
+Предварительная настройка пакетов …
+Выбор ранее не выбранного пакета geoip-database.
+(Чтение базы данных … на данный момент установлено 193680 файлов и каталогов.)
+Подготовка к распаковке …/0-geoip-database_20191224-2_all.deb …
+Распаковывается geoip-database (20191224-2) …
+Выбор ранее не выбранного пакета libgeoip1:amd64.
+Подготовка к распаковке …/1-libgeoip1_1.6.12-6build1_amd64.deb …
+Распаковывается libgeoip1:amd64 (1.6.12-6build1) …
+Выбор ранее не выбранного пакета nginx-common.
+Подготовка к распаковке …/2-nginx-common_1.18.0-3ubuntu1+focal2_all.deb …
+Распаковывается nginx-common (1.18.0-3ubuntu1+focal2) …
+Выбор ранее не выбранного пакета libnginx-mod-http-xslt-filter.
+Подготовка к распаковке …/3-libnginx-mod-http-xslt-filter_1.18.0-3ubuntu1+focal2_amd64.deb …
+Распаковывается libnginx-mod-http-xslt-filter (1.18.0-3ubuntu1+focal2) …
+Выбор ранее не выбранного пакета libnginx-mod-mail.
+Подготовка к распаковке …/4-libnginx-mod-mail_1.18.0-3ubuntu1+focal2_amd64.deb …
+Распаковывается libnginx-mod-mail (1.18.0-3ubuntu1+focal2) …
+Выбор ранее не выбранного пакета libnginx-mod-stream.
+Подготовка к распаковке …/5-libnginx-mod-stream_1.18.0-3ubuntu1+focal2_amd64.deb …
+Распаковывается libnginx-mod-stream (1.18.0-3ubuntu1+focal2) …
+Выбор ранее не выбранного пакета libnginx-mod-stream-geoip.
+Подготовка к распаковке …/6-libnginx-mod-stream-geoip_1.18.0-3ubuntu1+focal2_amd64.deb …
+Распаковывается libnginx-mod-stream-geoip (1.18.0-3ubuntu1+focal2) …
+Выбор ранее не выбранного пакета nginx-core.
+Подготовка к распаковке …/7-nginx-core_1.18.0-3ubuntu1+focal2_amd64.deb …
+Распаковывается nginx-core (1.18.0-3ubuntu1+focal2) …
+Выбор ранее не выбранного пакета libnginx-mod-http-image-filter.
+Подготовка к распаковке …/8-libnginx-mod-http-image-filter_1.18.0-3ubuntu1+focal2_amd64.deb …
+Распаковывается libnginx-mod-http-image-filter (1.18.0-3ubuntu1+focal2) …
+Выбор ранее не выбранного пакета nginx.
+Подготовка к распаковке …/9-nginx_1.18.0-3ubuntu1+focal2_all.deb …
+Распаковывается nginx (1.18.0-3ubuntu1+focal2) …
+Настраивается пакет nginx-common (1.18.0-3ubuntu1+focal2) …
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+Настраивается пакет libgeoip1:amd64 (1.6.12-6build1) …
+Настраивается пакет geoip-database (20191224-2) …
+Настраивается пакет libnginx-mod-stream (1.18.0-3ubuntu1+focal2) …
+Настраивается пакет nginx-core (1.18.0-3ubuntu1+focal2) …
+ * Upgrading binary nginx                                                                                                                                                                        [ OK ] 
+Настраивается пакет libnginx-mod-mail (1.18.0-3ubuntu1+focal2) …
+Настраивается пакет nginx (1.18.0-3ubuntu1+focal2) …
+Настраивается пакет libnginx-mod-http-image-filter (1.18.0-3ubuntu1+focal2) …
+Настраивается пакет libnginx-mod-stream-geoip (1.18.0-3ubuntu1+focal2) …
+Настраивается пакет libnginx-mod-http-xslt-filter (1.18.0-3ubuntu1+focal2) …
+Обрабатываются триггеры для libc-bin (2.31-0ubuntu9.1) …
+Обрабатываются триггеры для ufw (0.36-6) …
+Обрабатываются триггеры для systemd (245.4-4ubuntu3.3) …
+Обрабатываются триггеры для man-db (2.9.1-1) …
+Обрабатываются триггеры для nginx-core (1.18.0-3ubuntu1+focal2) …
+Triggering nginx reload ...
+oleg@oleg-VirtualBox:~$ nginx --help
+nginx: invalid option: "-"
+oleg@oleg-VirtualBox:~$ nginx -help
+nginx: invalid option: "e"
+oleg@oleg-VirtualBox:~$ nginx --version
+nginx: invalid option: "-"
+oleg@oleg-VirtualBox:~$ man nginx
+oleg@oleg-VirtualBox:~$ dpkg -r nginx
+dpkg: ошибка: запрошенная операция требует привилегий суперпользователя
+oleg@oleg-VirtualBox:~$ sudo dpkg -r nginx
+(Чтение базы данных … на данный момент установлено 193778 файлов и каталогов.)
+Удаляется nginx (1.18.0-3ubuntu1+focal2) …
+oleg@oleg-VirtualBox:~$ man nginx
+oleg@oleg-VirtualBox:~$ man nginx
+oleg@oleg-VirtualBox:~$ nginx -v
+nginx version: nginx/1.18.0 (Ubuntu)
+oleg@oleg-VirtualBox:~$ sudo dpkg -r nginx
+dpkg: предупреждение: игнорируется запрос на удаление неустановленного пакета nginx
+oleg@oleg-VirtualBox:~$ snap search 7zip
+Название            Версия                Издатель  Примечание  Описание
+p7zip-desktop       16.02.2               ernytech  -           P7Zip - Desktop
+lxqt-archiver-snap  200117.amd64-983.393  ito32     -           Archive Manager
+oleg@oleg-VirtualBox:~$ snap install p7zip-desktop
+p7zip-desktop 16.02.2 от Ermesto Castellotti (ernytech) установлен
+oleg@oleg-VirtualBox:~$ nano new_iptables.rules
+oleg@oleg-VirtualBox:~$ chmod +x new_iptables.rules 
+oleg@oleg-VirtualBox:~$ ls
+ lesson6   new_iptables.rules   test2.txt   test.txt   text.txt   Видео   Документы   Загрузки   Изображения   Музыка   Общедоступные  'Рабочий стол'   Шаблоны
+oleg@oleg-VirtualBox:~$ ./new_iptables.rules 
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+conntrack: Could not determine whether revision 1 is supported, assuming it is.
+conntrack: Could not determine whether revision 2 is supported, assuming it is.
+conntrack: Could not determine whether revision 3 is supported, assuming it is.
+conntrack: Could not determine whether revision 3 is supported, assuming it is.
+conntrack: Could not determine whether revision 3 is supported, assuming it is.
+conntrack: Could not determine whether revision 2 is supported, assuming it is.
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+conntrack: Could not determine whether revision 1 is supported, assuming it is.
+conntrack: Could not determine whether revision 2 is supported, assuming it is.
+conntrack: Could not determine whether revision 3 is supported, assuming it is.
+conntrack: Could not determine whether revision 3 is supported, assuming it is.
+conntrack: Could not determine whether revision 3 is supported, assuming it is.
+conntrack: Could not determine whether revision 2 is supported, assuming it is.
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+oleg@oleg-VirtualBox:~$ sudo ./new_iptables.rules 
+oleg@oleg-VirtualBox:~$ sudo iptables-save
+# Generated by iptables-save v1.8.4 on Fri Dec  4 20:53:40 2020
+*filter
+:INPUT DROP [7:1465]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+-A INPUT -i lo -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -p tcp -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p udp -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -i eth0 -p tcp -m tcp --dport 22 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+-A OUTPUT -o lo -j ACCEPT
+-A OUTPUT -p icmp -j ACCEPT
+-A OUTPUT -p tcp -m tcp --sport 32768:61000 -j ACCEPT
+-A OUTPUT -p udp -m udp --sport 32768:61000 -j ACCEPT
+-A OUTPUT -o eth0 -p tcp -m tcp --sport 22 -j ACCEPT
+COMMIT
+# Completed on Fri Dec  4 20:53:40 2020
+oleg@oleg-VirtualBox:~$ sudo iptables-save > iptables.rules
+oleg@oleg-VirtualBox:~$ ls
+ iptables.rules   lesson6   new_iptables.rules   test2.txt   test.txt   text.txt   Видео   Документы   Загрузки   Изображения   Музыка   Общедоступные  'Рабочий стол'   Шаблоны
+oleg@oleg-VirtualBox:~$ 
